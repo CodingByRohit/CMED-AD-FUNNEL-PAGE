@@ -525,7 +525,7 @@ font-weight: 400;
 
 /* Footer */
 footer {
-    background: #1a1a1a;
+    background: #1F2636;
     color: white;
     padding: 60px 0 30px;
 }
@@ -539,7 +539,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 30px;
+    
 }
 
 .footer-logo-icon {
@@ -552,10 +552,7 @@ footer {
     justify-content: center;
 }
 
-.footer-logo-icon::before {
-    content: '⚕️';
-    font-size: 25px;
-}
+
 
 .footer-logo-text {
     font-size: 16px;
@@ -573,6 +570,11 @@ footer {
 
 .footer-links {
     margin: 30px 0;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: underline;
 }
 
 .footer-links a {
