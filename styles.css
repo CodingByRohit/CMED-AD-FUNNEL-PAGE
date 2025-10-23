@@ -11,7 +11,7 @@
         }
 
         .container {
-            max-width: 1680px;
+            max-width: 1760px;
             margin: 0 auto;
             padding: 0 40px;
         }
@@ -60,20 +60,31 @@
             background-image: url(images/banner-bg.png);
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             color: white;
             padding: 120px 0;
             position: relative;
         }
 
         .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            /* grid-template-columns: 1fr 1fr; */
             gap: 80px;
             align-items: center;
         }
 
+        .hero-text{
+            width: 828px;
+        }
+
+        .hero-text h1 span{
+            color: #FFB696;
+        }
+
         .hero-text h1 {
-            font-size: 48px;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -88,7 +99,8 @@
         .hero-button {
             background: transparent;
             color: white;
-            border: 2px solid white;
+            border: 1px solid white;
+            border-radius: 4px;
             padding: 12px 30px;
             cursor: pointer;
             font-size: 14px;
@@ -102,6 +114,7 @@
 
         /* Contact Form */
         .contact-form {
+            width: 828px;
             background: white;
             padding: 40px;
             border-radius: 8px;
