@@ -268,7 +268,9 @@ font-weight: 400;
 
 /* What is EBO2 Section */
 .what-is-ebo2 {
+    margin-top: 250px;
     padding: 80px 0;
+    background-color: #50729714;
 }
 
 .ebo2-content {
@@ -307,7 +309,14 @@ font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.ebo2-image div img{
+    position: absolute;
+    height: 790px;
+    bottom: -80px;
+    right: 0;
 }
 
 /* Benefits Section */
