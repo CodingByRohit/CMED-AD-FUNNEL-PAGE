@@ -1,0 +1,51 @@
+/* Basic starter styles */
+:root{
+  --bg: #f6f8fa;
+  --accent: #0b5fff;
+  --text: #0b1a2b;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family:Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+.container{
+  background:#fff;
+  padding:2rem 2.5rem;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(11,17,30,0.08);
+  max-width:900px;
+  width:100%;
+  text-align:center;
+}
+
+h1{
+  color:var(--accent);
+  margin:0 0 1rem 0;
+}
+
+button.primary{
+  appearance:none;
+  border:0;
+  padding:0.6rem 1.25rem;
+  border-radius:6px;
+  background:var(--accent);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+}
+
+small.muted{
+  color:#6b7280;
+}
