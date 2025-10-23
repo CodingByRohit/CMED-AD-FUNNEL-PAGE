@@ -210,9 +210,9 @@ header {
 }
 
 .struggle-icon {
-    width: 60px;
-    height: 60px;
-    background: #FFF5F0;
+    width: 115px;
+    height: 115px;
+    /* background: #FFF5F0; */
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -220,11 +220,11 @@ header {
     flex-shrink: 0;
 }
 
-.struggle-icon::before {
+/* .struggle-icon::before {
     content: '🩺';
     font-size: 30px;
-}
-
+} */
+/* 
 .struggle-card:nth-child(2) .struggle-icon::before {
     content: '🧠';
 }
@@ -243,10 +243,13 @@ header {
 
 .struggle-card:nth-child(6) .struggle-icon::before {
     content: '⚡';
-}
+} */
 
 .struggle-text h4 {
-    font-size: 16px;
+    font-size: 21px;
+font-style: normal;
+font-weight: 400;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 5px;
     color: #333;
 }
@@ -663,7 +666,9 @@ footer {
         font-size: 32px;
     }
 
-    .struggles-grid,
+    .struggles-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .discover-grid {
         grid-template-columns: 1fr;
     }
