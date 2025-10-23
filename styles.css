@@ -64,12 +64,15 @@
             color: white;
             padding: 120px 0;
             position: relative;
+            min-height: 974px;
+            display: flex;
+    align-items: center;
         }
 
         .hero-content {
             display: flex;
             /* grid-template-columns: 1fr 1fr; */
-            gap: 80px;
+            /* gap: 80px; */
             align-items: center;
         }
 
@@ -94,6 +97,7 @@
             line-height: 1.8;
             margin-bottom: 30px;
             color: #ddd;
+            width: 609px;
         }
 
         .hero-button {
