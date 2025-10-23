@@ -552,8 +552,6 @@ footer {
     justify-content: center;
 }
 
-
-
 .footer-logo-text {
     font-size: 16px;
     font-weight: 600;
@@ -563,14 +561,14 @@ footer {
 .footer-text {
     max-width: 1000px;
     margin: 0 auto 30px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     color: #aaa;
 }
 
 .footer-links {
     margin: 30px 0;
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
