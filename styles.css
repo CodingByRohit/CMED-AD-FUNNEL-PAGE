@@ -326,17 +326,28 @@ font-weight: 400;
 }
 
 .benefits-content {
+     background-image: url('images/logos/Mask_group.jpg');
+     background-repeat: no-repeat;
+     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
+    position: relative;
+    height: 920px;
 }
 
-.benefits-image {
-    background: #e0e0e0;
-    height: 500px;
-    border-radius: 8px;
-    overflow: hidden;
+.benefits-text{
+    position: absolute;
+    z-index: 2;
+    background-color: #F1F4F7;
+    right: 0px;
+    bottom: -100px;
+    padding: 60px;
+}
+
+.benefits-lista{
+    margin-top:10px;
 }
 
 .benefits-text h2 {
@@ -619,7 +630,7 @@ footer {
 
 }
 .footer-bottom {
-    max-width: 1760px;
+    max-width: 100%;
     margin: 0 auto !important;
    padding: 5px 30px 5px 30px;
     display: flex;
