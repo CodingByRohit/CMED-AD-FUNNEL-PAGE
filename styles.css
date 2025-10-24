@@ -326,17 +326,28 @@ font-weight: 400;
 }
 
 .benefits-content {
+     background-image: url('images/logos/Mask_group.jpg');
+     background-repeat: no-repeat;
+     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
+    position: relative;
+    height: 920px;
 }
 
-.benefits-image {
-    background: #e0e0e0;
-    height: 500px;
-    border-radius: 8px;
-    overflow: hidden;
+.benefits-text{
+    position: absolute;
+    z-index: 2;
+    background-color: #F1F4F7;
+    right: 0px;
+    bottom: -100px;
+    padding: 60px;
+}
+
+.benefits-lista{
+    margin-top:10px;
 }
 
 .benefits-text h2 {
@@ -525,7 +536,7 @@ font-weight: 400;
 
 /* Footer */
 footer {
-    background: #1a1a1a;
+    background: #1F2636;
     color: white;
     padding: 60px 0 30px;
 }
@@ -539,7 +550,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 30px;
+    
 }
 
 .footer-logo-icon {
@@ -552,11 +563,6 @@ footer {
     justify-content: center;
 }
 
-.footer-logo-icon::before {
-    content: '⚕️';
-    font-size: 25px;
-}
-
 .footer-logo-text {
     font-size: 16px;
     font-weight: 600;
@@ -566,13 +572,19 @@ footer {
 .footer-text {
     max-width: 1000px;
     margin: 0 auto 30px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     color: #aaa;
+    padding-top: 40px;
 }
 
 .footer-links {
     margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: underline;
 }
 
 .footer-links a {
@@ -597,7 +609,7 @@ footer {
 .social-icon {
     width: 35px;
     height: 35px;
-    background: #333;
+   
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -610,14 +622,23 @@ footer {
 .social-icon:hover {
     background: #C87B5A;
 }
+.si{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 
+}
 .footer-bottom {
-    text-align: center;
-    padding-top: 30px;
-    border-top: 1px solid #333;
-    margin-top: 30px;
+    max-width: 100%;
+    margin: 0 auto !important;
+   padding: 5px 30px 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 12px;
     color: #666;
+    background-color: #C07858;
 }
 
 /* Responsive Design */
