@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -136,19 +137,45 @@
         <div class="container">
             <div class="benefits-content">
                 
-                <div class="benefits-text">
-                    <h2>Major <span>Benefits</span> of EBO2</h2>
-                    <ol>
-                        <li>BENEFIT</li>
-                    </ol>
-                    <h3>Reduces Inflammation</h3>
-                    <ul class="benefits-lista">
-                       <li style="list-style: disc;">Stimulates pathways that decrease systemic Inflammation</li>
-                       <li style="list-style: disc;">You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
-                       <li style="list-style: disc;">Perfect for autoimmune conditions</li>
-                    </ul>
-                    
-                </div>
+                <div class="benefits-slider">
+        <div class="slides-wrapper">
+          <div class="slide">
+            <div class="benefits-text">
+              <h2>Major <span>Benefits</span> of EBO2</h2>
+              <ol>
+                <li>BENEFIT</li>
+              </ol>
+              <h3>Reduces Inflammation</h3>
+              <ul class="benefits-lista">
+                <li>Stimulates pathways that decrease systemic Inflammation</li>
+                <li>You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
+                <li>Perfect for autoimmune conditions</li>
+              </ul>
+              <button class="cta-button">Schedule a Consult</button>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="benefits-text">
+              <h2>Major <span>Benefits</span> of EBO2</h2>
+              <ol>
+                <li>BENEFIT</li>
+              </ol>
+              <h3>Boosts Oxygenation</h3>
+              <ul class="benefits-lista">
+                <li>Improves oxygen flow to tissues</li>
+                <li>Enhances cellular metabolism</li>
+                <li>Supports overall energy levels</li>
+              </ul>
+              <button class="cta-button">Schedule a Consult</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="nav-arrow prev" aria-label="Previous Slide"><img src="images/logos/arrow-left.svg" alt=""></button>
+        <button class="nav-arrow next" aria-label="Next Slide">&#8594;</button>
+      </div>
             </div>
         </div>
     </section>
@@ -321,6 +348,29 @@
                 </div>
 
     
-    <script src="script.js"></script>
+    <!-- slider navigation script -->
+
+    <script>
+    const slidesWrapper = document.querySelector('.slides-wrapper');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.nav-arrow.prev');
+const nextBtn = document.querySelector('.nav-arrow.next');
+let currentIndex = 0;
+const totalSlides = slides.length;
+
+function updateSlidePosition() {
+  slidesWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+  updateSlidePosition();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+  updateSlidePosition();
+});
+</script>
 </body>
 </html>

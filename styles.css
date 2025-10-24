@@ -417,59 +417,114 @@ font-weight: 400;
 }
 
 .benefits-content {
-     background-image: url('images/logos/Mask_group.jpg');
-     background-repeat: no-repeat;
-     height: 100%;
+    background-image: url('images/logos/Mask_group.jpg');
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    position: relative;
-    height: 920px;
+    position: relative; /* Parent relative, slider absolute ke liye */
+    padding: 80px;
+    height: 100vh;
 }
 
-.benefits-text{
-    position: absolute;
-    z-index: 2;
-    background-color: #F1F4F7;
-    right: 0px;
-    bottom: -100px;
-    padding: 60px;
+/* Slider container */
+    .benefits-slider {
+      position: absolute;
+      overflow: hidden;
+      right: 0px;
+      bottom: -80px;
+        
+    }
+
+    /* Slides wrapper - flex container */
+  .slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
-.benefits-lista{
-    margin-top:10px;
+
+    /* Each slide */
+  .slide {
+    min-width: 100%; /* slides-wrapper width ka 100% */
+    width: 360px;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
-.benefits-text h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
+    /* Text styling */
+    .benefits-text h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #222;
+    }
+    .benefits-text h2 span {
+      color: #C87B5A;
+    }
+    .benefits-text ol {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      font-weight: 700;
+      color: #555;
+    }
+    .benefits-text h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+    .benefits-lista {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .benefits-lista li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
 
-.benefits-text h2 span {
-    color: #C87B5A;
-}
+    /* Button */
+    .cta-button {
+      background-color: #C87B5A;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #a46245;
+    }
 
-.benefits-list {
-    list-style: none;
+    /* Navigation arrows */
+    .nav-arrow {
+      position: absolute;
+    bottom: 5%;
+    transform: translateY(-50%);
+    /* background: #C87B5A; */
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px 6px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
 }
+.nav-arrow.prev { right: 105px; }
+.nav-arrow.next { right: 40px; }
 
-.benefits-list li {
-    padding: 15px 0;
-    padding-left: 30px;
-    position: relative;
-    font-size: 16px;
-    color: #666;
-}
-
-.benefits-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: #C87B5A;
-    font-weight: bold;
-    font-size: 18px;
-}
+    .nav-arrow:hover {
+      background: #a46245;
+    }
+    
 
 /* Discover Section */
 .discover-section {
