@@ -78,8 +78,8 @@ header {
 .content {
   position: relative;
   z-index: 2;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1760px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,56 +272,143 @@ font-weight: 400;
 
 /* What is EBO2 Section */
 .what-is-ebo2 {
-    margin-top: 300px;
-    padding: 80px 0 0 0;
-    background-color: #50729714;
+  margin-top: 300px;
+  padding: 80px 0 0 0;
+  background-color: #50729714;
 }
 
 .ebo2-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
 .ebo2-text h3 {
-    font-size: 14px;
-    color: #C87B5A;
-    margin-bottom: 10px;
+  font-size: 14px;
+  color: #C87B5A;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .ebo2-text h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #222;
 }
 
 .ebo2-text h2 span {
-    color: #C87B5A;
+  color: #C87B5A;
 }
 
 .ebo2-text p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 30px;
-    color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #666;
+  max-width: 550px;
 }
 
+.cta-button {
+  background-color: #C87B5A;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a46245;
+}
+
+/* ---------- IMAGE SECTION ---------- */
 .ebo2-image {
-    background: #f0f0f0;
-    height: 400px;
-    border-radius: 8px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    /* overflow: hidden; */
+  background: #f0f0f0;
+  height: 400px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
 }
 
-.ebo2-image div img{
-    position: absolute;
-    height: 790px;
-    bottom: -80px;
-    right: 0;
+.ebo2-image img {
+  position: absolute;
+  right: 0;
+  max-width: none;
 }
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .ebo2-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .ebo2-text {
+    order: 1;
+  }
+
+  .ebo2-text p {
+    margin: 0 auto 30px;
+  }
+
+  .ebo2-image {
+    order: 2;
+    height: 380px;
+    margin-top: 40px;
+  }
+
+  .ebo2-image img {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .what-is-ebo2 {
+    margin-top: 150px;
+    padding: 60px 0;
+  }
+
+  .ebo2-text h2 {
+    font-size: 28px;
+  }
+
+  .ebo2-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .cta-button {
+    font-size: 15px;
+    padding: 10px 22px;
+  }
+
+  .ebo2-image {
+    height: 300px;
+  }
+
+  .ebo2-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+}
+
 
 /* Benefits Section */
 .benefits-section {
@@ -663,7 +750,6 @@ footer {
 }
 
 .footer-text {
-    max-width: 1000px;
     margin: 0 auto 30px;
     font-size: 14px;
     line-height: 1.8;
@@ -761,6 +847,7 @@ footer {
     .benefits-content,
     .limited-content {
         grid-template-columns: 1fr;
+        background-position: center;
     }
 
     .struggles-grid,
@@ -774,6 +861,16 @@ footer {
 
     .hero-text h1 {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 900px) {
+    .right-form h2 {
+        font-size: 20px;
+    }
+
+    .struggling-section h2{
+        font-size: 25px;
     }
 }
 
@@ -800,6 +897,10 @@ footer {
     .struggles-grid{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .struggle-text h4{
+        font-size: 14px;
+    }
     .discover-grid {
         grid-template-columns: 1fr;
     }
@@ -813,6 +914,10 @@ footer {
     .benefits-text h2,
     .discover-section h2 {
         font-size: 28px;
+    }
+
+    .schedule-button{
+        font-size: 12px;;
     }
 
     .limited-text-section {
@@ -875,7 +980,7 @@ footer {
 
 @media (max-width: 600px) {
   .what-is-ebo2 {
-    margin-top: 120px;
+    margin-top: 0px;
     padding: 60px 0;
   }
 
@@ -884,12 +989,12 @@ footer {
   }
 
   .ebo2-text p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.7;
   }
 
   .cta-button {
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px 24px;
   }
 
@@ -934,6 +1039,59 @@ footer {
     font-size: 1rem;
     padding: 10px;
   }
+
+  .benefits-text h2{
+    font-size: 21px;
+  }
+
+  .benefits-text {
+    font-size: 14px;;
+  }
+
+  .discover-section h2{
+    font-size:22px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+
+  .discover-section p{
+    font-size: 14px;
+    padding: 0px 10px;
+    line-height:24px;
+  }
+
+  .discover-card-content{
+    font-size: 21px;
+    line-height: 30px;
+  }
+.discover-card-content ul li{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.discover-card-content .btn{
+    font-size: 12px;
+}
+
+.discover-card-content h3{
+    font-size: 20px;
+}
+
+.left-section p{
+    font-size: 14px;
+}
+
+.footer-text{
+    font-size: 12px;
+}
+
+.si{
+    gap :0px;
+}
+.footer-bottom{
+    font-size: 10px;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -975,6 +1133,10 @@ footer {
   .left-content p {
     max-width: 90%;
     margin: 0 auto 20px;
+    font-size: 14px;
+  }
+  .consult-btn{
+    font-size: 12px;
   }
 
   .right-form {
@@ -993,7 +1155,8 @@ footer {
   }
 
   .left-content h1 {
-    font-size: 1.6rem;
+    font-size: 21px;
+    font-weight: 600;
   }
 
   .left-content .highlight {
