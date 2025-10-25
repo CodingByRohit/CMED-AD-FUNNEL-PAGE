@@ -174,7 +174,7 @@
 
         <!-- Navigation Arrows -->
         <button class="nav-arrow prev" aria-label="Previous Slide"><img src="images/logos/arrow-left.svg" alt=""></button>
-        <button class="nav-arrow next" aria-label="Next Slide">&#8594;</button>
+        <button class="nav-arrow next" aria-label="Next Slide"><img src="images/logos/arrow-right.svg" alt=""></button>
       </div>
             </div>
         </div>
@@ -250,68 +250,46 @@
   </section>
 
     <!-- Limited Availability Section -->
-    <!-- <section class="limited-section">
-        <div class="container">
-            <div class="limited-content">
-                <div class="limited-text-section">
-                    <div class="limited-icon"></div>
-                    <div class="limited-text">
-                        <h2>LIMITED AVAILABILITY -</h2>
-                        <h3>Book Your Session Today</h3>
-                        <p>Experience the revolutionary power of EBO2 and see the difference for your health with Conscious Medicine. Sessions are limited – secure your spot today!</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Get In Touch With Us</h3>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" placeholder="First Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Submit</button>
-                    </form>
-                </div>
-            </div>
+    <section class="contact-section">
+    <div class="stripe"></div>
+
+    <div class="inner">
+      <div class="left">
+        <div class="icon-wrap" aria-hidden="true">
+          <!-- replace with your inline SVG or image -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="8" r="5" stroke="#1f2937" stroke-width="1.5" fill="white"/>
+            <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="#1f2937" stroke-width="1.5" fill="none"/>
+          </svg>
         </div>
-    </section> -->
 
+        <p class="badge">LIMITED AVAILABILITY -</p>
+        <h1 class="title">Book Your Session Today</h1>
+        <p class="desc">
+          Experience the revolutionary power of EB02 and see the difference in your health with Conscious Medicine.
+          Fill out this form and connect with us.
+        </p>
+      </div>
 
-        <section class="footer-form">
-    <div class="left-section">
-      <h2>LIMITED AVAILABILITY -</h2>
-      <h1>Book Your Session Today</h1>
-      <p>Experience the revolutionary power of EBO2 and see the difference in your health with Conscious Medicine. Fill out this form and connect with us.</p>
-    </div>
-    <div class="right-section">
-      <h2>Get In Touch With Us</h2>
-      <form action="#" method="POST">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" required>
+      <div class="right-card">
+        <div class="card-inner">
+          <h3 class="form-heading">Get In Touch With Us</h3>
 
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last-name" required>
+          <form class="contact-form" action="#" method="post" novalidate>
+            <div class="row">
+              <input type="text" name="fname" placeholder="First Name" required>
+              <input type="text" name="lname" placeholder="Last Name" required>
+            </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
 
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <button type="submit">Submit</button>
-      </form>
+            <div class="btn-row">
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
