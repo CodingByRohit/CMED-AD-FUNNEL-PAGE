@@ -59,11 +59,12 @@ header {
 .hero-section {
   position: relative;
   background: url("images/banner-bg.png") no-repeat center center/cover;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 70px 0px 120px 0px ;
 }
 
 /* Dark overlay for readability */
@@ -95,20 +96,20 @@ header {
 .left-content .highlight {
   color: #e87c3c;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 60px;
 }
 
 .left-content h1 {
-  font-size: 2rem;
+  font-size: 48px;
   margin: 10px 0;
-  font-weight: bold;
+  font-weight: semi-bold;
 }
 
 .left-content p {
   margin: 15px 0 25px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  max-width: 500px;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 600px;
 }
 
 .consult-btn {
@@ -129,7 +130,7 @@ header {
 
 /* ---------- RIGHT FORM ---------- */
 .right-form {
-  flex: 1 1 40%;
+  /* flex: 1 1 40%; */
   background-color: #fff;
   color: #222;
   padding: 35px 40px;
@@ -138,7 +139,7 @@ header {
 }
 
 .right-form h2 {
-  font-size: 1.5rem;
+  font-size: 40px;
   margin-bottom: 20px;
   color: #222;
 }
@@ -152,14 +153,16 @@ form {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
+  justify-content: space-between;
 }
 
 form input {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-bottom: 15px;
+    padding: 25px 60px;
+    font-size: 1rem;
+    margin-bottom: 34px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #7E7E7E0A;
 }
 
 form button {
@@ -187,8 +190,9 @@ form button:hover {
 }
 
 .struggling-section h2 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 60px;
+    line-height: 48px;
 }
 
 .struggling-section h2 span {
@@ -266,14 +270,14 @@ font-weight: 400;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     transition: background 0.3s;
 }
 
 /* What is EBO2 Section */
 .what-is-ebo2 {
   margin-top: 300px;
-  padding: 80px 0 0 0;
+  padding: 80px 0 50px 0;
   background-color: #50729714;
 }
 
@@ -293,7 +297,7 @@ font-weight: 400;
 }
 
 .ebo2-text h2 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: #222;
 }
@@ -303,11 +307,11 @@ font-weight: 400;
 }
 
 .ebo2-text p {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.8;
   margin-bottom: 30px;
   color: #666;
-  max-width: 550px;
+  max-width: 700px;
 }
 
 .cta-button {
@@ -340,80 +344,15 @@ font-weight: 400;
   position: absolute;
   right: 0;
   max-width: none;
+  bottom: -50px;
 }
 
-/* ============================= */
-/* 📱 RESPONSIVE DESIGN */
-/* ============================= */
-
-/* Tablet (max-width: 992px) */
-@media (max-width: 992px) {
-  .ebo2-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .ebo2-text {
-    order: 1;
-  }
-
-  .ebo2-text p {
-    margin: 0 auto 30px;
-  }
-
-  .ebo2-image {
-    order: 2;
-    height: 380px;
-    margin-top: 40px;
-  }
-
-  .ebo2-image img {
-    position: relative;
-    height: auto;
-    width: 100%;
-    max-width: 500px;
-    bottom: 0;
-    right: 0;
-  }
-}
-
-/* Mobile (max-width: 600px) */
-@media (max-width: 600px) {
-  .what-is-ebo2 {
-    margin-top: 150px;
-    padding: 60px 0;
-  }
-
-  .ebo2-text h2 {
-    font-size: 28px;
-  }
-
-  .ebo2-text p {
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  .cta-button {
-    font-size: 15px;
-    padding: 10px 22px;
-  }
-
-  .ebo2-image {
-    height: 300px;
-  }
-
-  .ebo2-image img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-  }
-}
 
 
 /* Benefits Section */
 .benefits-section {
     padding: 80px 0;
-    background: #f9f9f9;
+    
 }
 
 .benefits-content {
@@ -447,10 +386,10 @@ font-weight: 400;
 
     /* Each slide */
   .slide {
-    min-width: 100%; /* slides-wrapper width ka 100% */
-    width: 360px;
-    background: #fff;
-    padding: 30px 20px;
+    min-width: 100%;
+    width: 460px;
+    background: #F1F4F7;
+    padding: 30px 90px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
     box-sizing: border-box;
@@ -459,7 +398,7 @@ font-weight: 400;
 
     /* Text styling */
     .benefits-text h2 {
-      font-size: 28px;
+      font-size: 48px;
       font-weight: 700;
       margin-bottom: 15px;
       color: #222;
@@ -470,13 +409,15 @@ font-weight: 400;
     .benefits-text ol {
       margin-bottom: 15px;
       padding-left: 20px;
-      font-weight: 700;
-      color: #555;
+      font-weight: 500;
+      font-size: 20px;
+      color: #1F2636;
     }
     .benefits-text h3 {
-      font-size: 22px;
+      font-size: 32px;
       margin-bottom: 15px;
-      color: #222;
+      font-weight: 700;
+      color: #1F2636;
     }
     .benefits-lista {
       list-style-type: disc;
@@ -486,7 +427,9 @@ font-weight: 400;
     }
     .benefits-lista li {
       margin-bottom: 10px;
-      line-height: 1.5;
+      line-height: 36px;
+      font-size: 24px;
+      font-weight: 400;
     }
 
     /* Button */
@@ -639,7 +582,7 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
       background-color: #c47a4a;
       color: #fff;
       border: none;
-      padding: 10px 20px;
+      padding: 10px 20px !important;
       border-radius: 6px;
       font-weight: 600;
       cursor: pointer;
@@ -664,7 +607,7 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
   left:0; right:0;
   top:51%;
   transform:translateY(-50%);
-  height:350px;                   /* matches screenshot stripe height */
+  height:450px;                   /* matches screenshot stripe height */
   background:#F1F4F780;
   z-index:0;
 }
@@ -691,28 +634,35 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
  
   display:flex;
   align-items:center;
- 
+  
   background:transparent;
   margin-bottom:18px;
 }
+
+.icon-wrap img{
+  max-width:100%;
+  height:auto;
+  width: 112px;
+}
+
 .badge{
   font-weight:700;
-  color:var(--accent);
+  color:#B67254;
   letter-spacing:0.6px;
   margin:0 0 8px 0;
-  font-size:14px;
+  font-size:48px;
 }
 .title{
   margin:0 0 14px 0;
-  font-size:22px;
+  font-size:40px;
   font-weight:700;
   color:#0f1724;
 }
 .desc{
   margin:0;
-  font-size:14px;
-  color:var(--muted);
-  line-height:1.6;
+  font-size:21px;
+  color:#1F2636;
+  line-height:31px;
   max-width:520px;
 }
 
@@ -720,7 +670,7 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
 .right-card{
       /* flex: 0 0 420px; */
     padding: 39px;
-    width: 600px;
+    /* width: 600px; */
     display: flex;
     justify-content: flex-end;
     margin-right: 0;
@@ -736,7 +686,7 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
 /* Form heading */
 .form-heading{
   margin:0 0 35px 0;
-  font-size:18px;
+  font-size:40px;
   color:#0f1724;
   font-weight:700;
 }
@@ -750,16 +700,17 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
 .row{
   display:flex;
   gap:10px;
+  justify-content: space-between;
 }
 .contact-form input{
-  height:50px;
-  padding:14px 30px !important;
+  height:56px;
+  padding:14px 80px !important;
   border:1px solid #e4e7eb;
   border-radius:4px;
   font-size:13px;
   color:#111827;
   background:#FAFAFA;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .row input{ flex:1; }
 
@@ -777,7 +728,7 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
 .btn{
   background: #C07858 !important;
     color: white !important;
-    padding: 6px 20px !important;
+    padding: 12px 20px !important;
     border: none !important;
     border-radius: 3px !important;
 }
@@ -841,11 +792,12 @@ form label {
 }
 
 form input {
-  padding: 10px;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 25px 60px;
+    font-size: 1rem;
+    margin-bottom: 34px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #7E7E7E0A;
 }
 
 form button {
@@ -856,6 +808,7 @@ form button {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  width:200px;
 }
 
 form button:hover {
@@ -970,474 +923,3 @@ footer {
     background-color: #C07858;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .container {
-        padding: 0 30px;
-    }
-
-    .hero-text h1 {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .hero{
-        padding: 100px 0;
-    }
-    
-    .hero-text p{
-        width: 400px;
-    }
-
-    .hero-content,
-    .ebo2-content,
-    .benefits-content,
-    .limited-content {
-        grid-template-columns: 1fr;
-        background-position: center;
-    }
-
-    .struggles-grid,
-    .discover-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-text h1 {
-        font-size: 36px;
-    }
-    .icon-wrap{
-      justify-content: start;
-    }
-}
-
-@media (max-width: 900px) {
-    .right-form h2 {
-        font-size: 20px;
-    }
-
-    .struggling-section h2{
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 768px) {
-      .discover-card {
-        width: 100%;
-        max-width: 420px;
-      }
-    }
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
-
-    .hero {
-        padding: 60px 0;
-    }
-
-    .hero-text h1 {
-        font-size: 32px;
-    }
-
-    .struggles-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .struggle-text h4{
-        font-size: 14px;
-    }
-    .discover-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .struggle-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .ebo2-text h2,
-    .benefits-text h2,
-    .discover-section h2 {
-        font-size: 28px;
-    }
-
-    .schedule-button{
-        font-size: 12px;;
-    }
-
-    .limited-text-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-form {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 26px;
-    }
-
-    .cta-button,
-    .hero-button,
-    .submit-button,
-    .schedule-button,
-    .discover-card-button {
-        padding: 10px 20px;
-        font-size: 13px;
-    }
-
-    .ebo2-text h2,
-    .benefits-text h2,
-    .discover-section h2 {
-        font-size: 24px;
-    }
-}
-
-
-/* what is eboo2 responisve  */
-
-@media (max-width: 992px) {
-  .ebo2-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .ebo2-text p {
-    margin: 0 auto 30px;
-  }
-
-  .ebo2-image {
-    height: 350px;
-    margin-top: 40px;
-  }
-
-  .ebo2-image div img {
-    position: relative;
-    height: auto;
-    max-width: 100%;
-    bottom: 0;
-    right: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .what-is-ebo2 {
-    margin-top: 0px;
-    padding: 60px 0;
-  }
-
-  .ebo2-text h2 {
-    font-size: 28px;
-  }
-
-  .ebo2-text p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .cta-button {
-    font-size: 12px;
-    padding: 10px 24px;
-  }
-
-  .ebo2-image {
-    height: 280px;
-  }
-}
-
-/* LIMITED aVAILABILITY section */
-
-
-@media (max-width: 768px) {
-  .container {
-    padding: 30px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .icon-wrap{
-    justify-content: center;
-  }
-
-  form input {
-    font-size: 0.9rem;
-  }
-
-  form button {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  .benefits-text h2{
-    font-size: 21px;
-  }
-
-  .benefits-text {
-    font-size: 14px;;
-  }
-
-  .discover-section h2{
-    font-size:22px;
-    padding: 0 10px;
-    line-height: 30px;
-  }
-
-  .discover-section p{
-    font-size: 14px;
-    padding: 0px 10px;
-    line-height:24px;
-  }
-
-  .discover-card-content{
-    font-size: 21px;
-    line-height: 30px;
-  }
-.discover-card-content ul li{
-    font-size: 14px;
-    line-height: 22px;
-}
-
-.discover-card-content .btn{
-    font-size: 12px;
-}
-
-.discover-card-content h3{
-    font-size: 20px;
-}
-
-.left-section p{
-    font-size: 14px;
-}
-
-.footer-text{
-    font-size: 12px;
-}
-
-.si{
-    gap :0px;
-}
-.footer-bottom{
-    font-size: 10px;
-}
-
-}
-
-@media (max-width: 480px) {
-  .left-section h1 {
-    font-size: 1.5rem;
-  }
-
- .icon-wrap{
-    justify-content: center;
-  }
-
-  .left-section h2 {
-    font-size: 1.1rem;
-  }
-
-  .right-section h2 {
-    font-size: 1.2rem;
-  }
-
-  form input {
-    font-size: 0.8rem;
-  }
-
-  form button {
-    font-size: 0.9rem;
-    padding: 8px;
-  }
-}
-
-/* Hero section responsive  */
-@media (max-width: 992px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .left-content {
-    flex: 1 1 100%;
-    margin-bottom: 30px;
-  }
-
-  .left-content p {
-    max-width: 90%;
-    margin: 0 auto 20px;
-    font-size: 14px;
-  }
-  .consult-btn{
-    font-size: 12px;
-  }
-
-  .right-form {
-    width: 90%;
-  }
-
-  .name-fields {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-section {
-    height: auto;
-    padding: 60px 0;
-  }
-
-  .left-content h1 {
-    font-size: 21px;
-    font-weight: 600;
-  }
-
-  .left-content .highlight {
-    font-size: 1.4rem;
-  }
-
-  .right-form {
-    padding: 25px;
-  }
-
-  form input {
-    font-size: 0.9rem;
-  }
-
-  form button {
-    font-size: 0.95rem;
-  }
-}
-
-
-
-/* slider section style  */
-
- @media (max-width: 768px) {
-      .benefits-section {
-        padding: 40px 15px;
-      }
-      .benefits-text h2 {
-        font-size: 24px;
-      }
-      .benefits-text h3 {
-        font-size: 20px;
-      }
-      .benefits-text ol {
-        padding-left: 15px;
-      }
-      .benefits-lista {
-        padding-left: 15px;
-        margin-bottom: 20px;
-      }
-      .nav-arrow.prev {
-        left: 5px;
-      }
-      .nav-arrow.next {
-        right: 5px;
-      }
-      .cta-button {
-        padding: 10px 24px;
-        font-size: 15px;
-      }
-      .slide {
-        padding: 30px 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .benefits-section {
-        padding: 30px 10px;
-      }
-      .benefits-text h2 {
-        font-size: 20px;
-      }
-      .benefits-text h3 {
-        font-size: 18px;
-      }
-      .benefits-text ol {
-        padding-left: 12px;
-      }
-      .benefits-lista {
-        padding-left: 12px;
-        margin-bottom: 15px;
-      }
-      .nav-arrow {
-        font-size: 20px;
-        padding: 8px 12px;
-      }
-      .nav-arrow.prev {
-        left: 3px;
-      }
-      .nav-arrow.next {
-        right: 3px;
-      }
-      .cta-button {
-        padding: 8px 20px;
-        font-size: 14px;
-      }
-      .slide {
-        padding: 20px 15px;
-      }
-    }
-
-
-
-    /* contact section respoinsive */
-
-    @media (max-width: 992px) {
-      .inner {
-        flex-direction: column;
-        align-items: stretch;
-        text-align: center;
-      }
-      .left {
-        max-width: 100%;
-        padding: 20px;
-        text-align: center;
-      }
-      .right-card {
-        width: 100%;
-        height: auto;
-        margin-top: 30px;
-        box-shadow: -4px 8px 25px 2px #C0785812;
-        justify-content: center;
-        padding: 30px 0px;
-      }
-      .card-inner {
-        justify-content: flex-start;
-      }
-      .form-heading {
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .stripe {
-        height: 250px;
-        top: 22%; 
-      }
-      .row {
-        flex-direction: column;
-      }
-      .contact-form input {
-        font-size: 14px;
-      }
-      .btn {
-        width: 100%;
-      }
-      .title {
-        font-size: 20px;
-      }
-      .desc {
-        font-size: 14px;
-      }
-    }
