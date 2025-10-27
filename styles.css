@@ -672,10 +672,11 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
 /* inner container centers content and sets width */
 .inner{
   position:relative;
-  max-width:1180px;
+  max-width:1760px;
   margin:0 auto;
   display:flex;
   align-items:center;
+  justify-content: space-between;
   gap:40px;
   z-index:2; /* above stripe */
 }
@@ -687,11 +688,10 @@ filter: invert(35%) sepia(79%) saturate(470%) hue-rotate(337deg) brightness(100%
   max-width:700px;
 }
 .icon-wrap{
-  width:60px;
-  height:60px;
+ 
   display:flex;
   align-items:center;
-  justify-content:center;
+ 
   background:transparent;
   margin-bottom:18px;
 }
@@ -1010,6 +1010,9 @@ footer {
     .hero-text h1 {
         font-size: 36px;
     }
+    .icon-wrap{
+      justify-content: start;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1161,7 +1164,9 @@ footer {
     align-items: center;
   }
 
-  
+  .icon-wrap{
+    justify-content: center;
+  }
 
   form input {
     font-size: 0.9rem;
@@ -1229,6 +1234,10 @@ footer {
 @media (max-width: 480px) {
   .left-section h1 {
     font-size: 1.5rem;
+  }
+
+ .icon-wrap{
+    justify-content: center;
   }
 
   .left-section h2 {
@@ -1393,6 +1402,7 @@ footer {
       .left {
         max-width: 100%;
         padding: 20px;
+        text-align: center;
       }
       .right-card {
         width: 100%;
