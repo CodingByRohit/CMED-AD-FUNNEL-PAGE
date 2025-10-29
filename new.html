@@ -45,6 +45,13 @@ h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
+.btnalign{
+    text-align: left;
+}
+
+.ep-wrapper{
+    height: 400px;
+}
     /* Hero Section */
     .hero {
       background: url('image/banner-bg.png') center/cover no-repeat;
@@ -72,8 +79,8 @@ h2, h3, h4, h5, h6 {
     .form-box {
       background: #fff;
       border-radius: 8px;
-      padding: 25px;
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      /* padding: 25px; */
+      /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); */
     }
 
     .btn-primary {
@@ -341,7 +348,7 @@ h2, h3, h4, h5, h6 {
   .card-slider {
     max-width: 100%; /* Full width on mobile */
     margin: 10px auto; /* Center the slider */
-    top: 30%;  /* Adjust positioning for mobile */
+   transform: translate(0%, -25%) !important;
   }
 
   .carousel-control-prev, .carousel-control-next {
@@ -494,8 +501,12 @@ h2, h3, h4, h5, h6 {
 
     @media (max-width:768px){
         h1{
-            font-size: 50px !important;
+            font-size: 30px !important;
             text-align: center;
+        }
+
+        .hero-content{
+            padding-top: 50x !important;
         }
         p{
             font-size: 14px !important;
@@ -523,6 +534,17 @@ h2, h3, h4, h5, h6 {
             text-align: center !important;
             font-size: 14px !important;
         }
+        .hero-content h1{
+            font-size: 45px;
+        }
+
+        .card-slider{
+            transform: translate(21%, -41%);
+        }
+        .btnalign{
+    text-align: center;
+}
+
     }
   </style>
 </head>
@@ -541,27 +563,33 @@ h2, h3, h4, h5, h6 {
     <div class="hero-overlay"></div>
     <div class="container hero-content">
       <div class="row align-items-center">
-        <div class="col-md-6 text-white mb-4">
+        <div class="col-md-6 col-sm-12 text-white mb-4">
           <h1><span>EBO2 Ozone Therapy:</span> Revolutionary Blood Detox & Rejuvenation</h1>
           <p class="text-white">Experience the next generation of wellness with EBO2 Ozone Therapy, a breakthrough treatment designed to purify, oxygenate, and rejuvenate your blood at a cellular level.</p>
-          <div class="text-center"><a href="#" class="btn btn-primary">Schedule a Consult</a></div>
+          <div class="btnalign"><a href="#" class="btn btn-primary">Schedule a Consult</a></div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
           <div class="form-box">
             <h5 class="text-center mb-3 text-black">Get In Touch With Us</h5>
-            <form>
-              <div class="row g-2">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First Name" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last Name" required>
-                </div>
-              </div>
-              <input type="email" class="form-control mt-3" placeholder="Email" required>
-              <input type="tel" class="form-control mt-3" placeholder="Phone" required>
-              <button class="btn btn-primary w-100 mt-3">Submit</button>
-            </form>
+            <iframe
+    src="https://api.leadconnectorhq.com/widget/form/xf9RmNemBKdjyOzoMUCj"
+    style="width:100%;height:100%;border:none;border-radius:16px"
+    id="inline-xf9RmNemBKdjyOzoMUCj" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Landing Page(Joint Injection)"
+    data-height="560"
+    data-layout-iframe-id="inline-xf9RmNemBKdjyOzoMUCj"
+    data-form-id="xf9RmNemBKdjyOzoMUCj"
+    title="Landing Page(Joint Injection)"
+        >
+</iframe>
+
           </div>
         </div>
       </div>
@@ -762,7 +790,7 @@ h2, h3, h4, h5, h6 {
       <div class="row align-items-center">
         
         <!-- Left Side Text -->
-        <div class="col-lg-6 contact-content">
+        <div class="col-lg-6 col-md-6 contact-content">
             <img src="image/logos/logo.png" width="112" height="112" alt="icon" width="50" height="50" class="me-3">
           <div class="d-flex align-items-center mb-3">
            
@@ -779,29 +807,29 @@ Fill out this form and connect with us.
          
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-md-6">
+          <div class="form-box">
+            <h5 class="text-center mb-3 text-black">Get In Touch With Us</h5>
+            <iframe
+    src="https://api.leadconnectorhq.com/widget/form/xf9RmNemBKdjyOzoMUCj"
+    style="width:100%;height:100%;border:none;border-radius:16px"
+    id="inline-xf9RmNemBKdjyOzoMUCj" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Landing Page(Joint Injection)"
+    data-height="560"
+    data-layout-iframe-id="inline-xf9RmNemBKdjyOzoMUCj"
+    data-form-id="xf9RmNemBKdjyOzoMUCj"
+    title="Landing Page(Joint Injection)"
+        >
+</iframe>
 
-<div class="form-card">
-      <h5>Get In Touch With Us</h5>
-      <form>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="First Name">
           </div>
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Last Name">
-          </div>
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Email">
-        </div>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Phone">
-        </div>
-        <button type="submit" class="btn-submit">Submit</button>
-      </form>
-    </div>
-
         </div>
 
       </div>
@@ -814,7 +842,7 @@ Fill out this form and connect with us.
   <!-- Footer -->
   <footer>
     <div class="container text-center">
-      <h5 class="fw-bold text-white">CONSCIOUS MEDICINE</h5>
+      <h5 class="fw-bold text-white"> <img src="image/logos/logo.png" alt=""> CONSCIOUS MEDICINE</h5>
       <p class="small mt-3 text-white">*This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK. These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All content and information we provide here are for informational and educational purposes only, do not constitute medical advice, and do not establish any kind of patient-client relationship by your use of the information provided. Although we strive to provide accurate general information, the information presented here is not a substitute for any kind of professional advice, and you should not rely solely on this information. Always discuss any changes to your medical treatment with your medical provider. If you're not willing to accept that, please DO NOT GET OUR INFORMATION.</p>
       <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
     </div>
@@ -835,7 +863,7 @@ Fill out this form and connect with us.
     </div>
   </div>
   </section>
-
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </body>
