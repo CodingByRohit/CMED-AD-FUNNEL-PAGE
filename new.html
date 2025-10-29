@@ -49,6 +49,10 @@ h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
+.headingform
+{
+    font-size: 40px;
+}
 .ep-wrapper{
     height: 400px;
 }
@@ -249,6 +253,17 @@ h2, h3, h4, h5, h6 {
     color: #c55b26;
   }
 
+  .cardsbtn1 {
+    margin-top: 77px !important;
+  }
+
+  .cardsbtn2 {
+    margin-top: 110px !important;
+   
+  }
+
+
+
   .theborder
   /* {
     border: 1px solid #1F263670;
@@ -314,7 +329,7 @@ h2, h3, h4, h5, h6 {
 }
 
 /* Carousel Controls */
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-next {
   width: 30px;
   height: 30px;
   background-color: #f15a29;
@@ -322,6 +337,18 @@ h2, h3, h4, h5, h6 {
   opacity: 0.9;
   top: auto;
   bottom: 10px;
+  transform: translate(-17px, 2px);
+}
+
+.carousel-control-prev{
+  width: 30px;
+  height: 30px;
+  background-color: #f15a29;
+  border-radius: 50%;
+  opacity: 0.9;
+  top: auto;
+  bottom: 10px;
+  transform: translate(578px, 10%);
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -351,7 +378,14 @@ h2, h3, h4, h5, h6 {
    transform: translate(0%, -25%) !important;
   }
 
-  .carousel-control-prev, .carousel-control-next {
+  .carousel-control-prev {
+    width: 25px;
+    height: 25px; /* Smaller carousel controls */
+    transform: translate(440px, 10px) !important;
+  }
+
+
+  .carousel-control-next {
     width: 25px;
     height: 25px; /* Smaller carousel controls */
   }
@@ -364,6 +398,15 @@ h2, h3, h4, h5, h6 {
 
   .card-slider h4 {
     font-size: 22px; /* Adjust heading size for mobile */
+  }
+
+  .cardsbtn1 {
+    margin-top: 10px !important;
+  }
+
+  .cardsbtn2 {
+    margin-top: 10px !important;
+   
   }
 
   .highlight {
@@ -525,6 +568,7 @@ h2, h3, h4, h5, h6 {
 
         .btn{
             font-size: 12px !important;
+            margin: 0px !important;
         }
 
         .belowfootericons{
@@ -544,6 +588,12 @@ h2, h3, h4, h5, h6 {
         .btnalign{
     text-align: center;
 }
+
+.carousel-control-prev{
+  transform: translate(300px, 10%);
+}
+
+
 
     }
   </style>
@@ -570,7 +620,7 @@ h2, h3, h4, h5, h6 {
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="form-box">
-            <h5 class="text-center mb-3 text-black">Get In Touch With Us</h5>
+            <h5 class="text-center mb-3 text-black headingform">Get In Touch With Us</h5>
             <iframe
     src="https://api.leadconnectorhq.com/widget/form/xf9RmNemBKdjyOzoMUCj"
     style="width:100%;height:100%;border:none;border-radius:16px"
@@ -763,7 +813,7 @@ h2, h3, h4, h5, h6 {
               <li>Rheumatoid arthritis</li>
               <li>Glyphosate toxicity</li>
             </ul>
-            <a href="#" class="btn btn-primary mt-2" style="margin-top: 77px !important;">Schedule a Consult</a>
+            <a href="#" class="btn btn-primary mt-2 cardsbtn1" >Schedule a Consult</a>
           </div>
         </div>
         <div class="col-md-4 theborder">
@@ -777,7 +827,7 @@ h2, h3, h4, h5, h6 {
               <li>Proven track record of patient success</li>
               <li>Comprehensive follow-up care</li>
             </ul>
-            <a href="#" class="btn btn-primary mt-2" style="margin-top: 110px !important;">Schedule a Consult</a>
+            <a href="#" class="btn btn-primary mt-2 cardsbtn2" >Schedule a Consult</a>
           </div>
         </div>
       </div>
