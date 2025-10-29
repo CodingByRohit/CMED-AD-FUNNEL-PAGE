@@ -156,7 +156,14 @@ h2, h3, h4, h5, h6 {
         font-size: 32px;
       }
       .struggle-card p {
-        font-size: 19px;
+        font-size: 14px !important;
+      }
+      .struggle-card img{
+        width: 65px;
+        height: 65px;
+      }
+      .struggle-card{
+        padding: 15px;
       }
     }
     /* What is EBO2 */
@@ -199,8 +206,7 @@ h2, h3, h4, h5, h6 {
 
     .override {
       position: relative;
-      bottom: auto;
-      right: auto;
+      
       margin-top: 30px;
       width: 100%;
       max-width: 100%;
@@ -246,97 +252,115 @@ h2, h3, h4, h5, h6 {
 
     /* benefits  */
 
-    
-    .container-custom {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      position: relative;
-      /* overflow: hidden; */
-    }
+.newimg{
+     position: relative;
+}
 
-    .image-section {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
+ .image-section {
+  position: relative; /* Make the image section relative */
+  width: 100%;
+  height: auto;
+}
 
-    .gaping {
-        margin-top: 100px;
-    }
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-    .image-section img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+.card-slider {
+  position: absolute; /* Position absolute to overlap the image */
+  width: 100%;
+  max-width: 680px; /* Maximum width for large screens */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transform: translate(-43%, 100%);
+  margin-top: 10px;
+}
 
-    .card-slider {
-      position: absolute;
-          right: 0;
-    /* bottom: -10%; */
-      width: 680px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      padding: 20px;
-      transform: translate(-105%, 120%);
-    }
+.card-slider h4 {
+  font-weight: bold;
+}
 
-    .card-slider h4 {
-      font-weight: bold;
-    }
+.highlight {
+  color: #f15a29;
+}
 
-    .highlight {
-      color: #f15a29;
-    }
+/* Button Styles */
+.btn-schedule {
+  border: 1px solid #f15a29;
+  color: #f15a29;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+}
 
-    .carousel-control-prev {
-      width: 30px;
-      height: 30px;
-      background-color: #f15a29;
-      border-radius: 50%;
-      top: auto;
-      bottom: 10px;
-      opacity: 0.9;
-      transform: translatex(500px);
-    }
+.btn-schedule:hover {
+  background-color: #f15a29;
+  color: white;
+}
 
-    
-    .carousel-control-next {
-      width: 30px;
-      height: 30px;
-      background-color: #f15a29;
-      border-radius: 50%;
-      top: auto;
-      bottom: 10px;
-      opacity: 0.9;
-    }
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+  width: 30px;
+  height: 30px;
+  background-color: #f15a29;
+  border-radius: 50%;
+  opacity: 0.9;
+  top: auto;
+  bottom: 10px;
+}
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-size: 50%;
-    }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-size: 50%;
+}
 
-    .btn-schedule {
-      border: 1px solid #f15a29;
-      color: #f15a29;
-      background-color: white;
-      padding: 5px 10px;
-      border-radius: 4px;
-      font-size: 14px;
-      text-decoration: none;
-    }
+/* RESPONSIVE STYLES */
+@media (max-width: 992px) {
+  .card-slider {
+    max-width: 90%; /* Max width of 90% on tablets */
+    margin: 20px auto; /* Center the slider */
+    top: 25%;  /* Adjust top positioning for better alignment */
+  }
+}
 
-    .btn-schedule:hover {
-      background-color: #f15a29;
-      color: white;
-    }
+@media (max-width: 576px) {
+  .card-slider {
+    max-width: 100%; /* Full width on mobile */
+    margin: 10px auto; /* Center the slider */
+    top: 30%;  /* Adjust positioning for mobile */
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 25px;
+    height: 25px; /* Smaller carousel controls */
+  }
+
+  .btn-schedule {
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 100%;  /* Full-width button on mobile */
+  }
+
+  .card-slider h4 {
+    font-size: 22px; /* Adjust heading size for mobile */
+  }
+
+  .highlight {
+    font-size: 22px; /* Adjust highlight font size for mobile */
+  }
+
+  .card-slider p, .card-slider ul {
+    font-size: 14px; /* Reduce text size for mobile */
+  }
+}
+
 
 
     /* Limited section  */
@@ -430,6 +454,20 @@ h2, h3, h4, h5, h6 {
       }
     }
 
+    @media (max-width:768px) {
+        .contact-content{
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        .limitedm h5{
+            font-size: 28px;
+        }
+        .limitedm h3{
+            font-size: 22px;
+        }
+    }
+
     footer {
       background: #111;
       color: #ccc;
@@ -445,6 +483,39 @@ h2, h3, h4, h5, h6 {
 
     footer a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width:768px){
+        h1{
+            font-size: 50px !important;
+            text-align: center;
+        }
+        p{
+            font-size: 14px !important;
+            text-align: center;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-size:28px;
+        }
+        .newdesign{
+            margin-top:0px;
+        }
+        li{
+            font-size: 14px !important;
+        }
+
+        .btn{
+            font-size: 12px !important;
+        }
+
+        .belowfootericons{
+            text-align: center !important;
+        }
+        .belowfooter{
+            text-align: center !important;
+            font-size: 14px !important;
+        }
     }
   </style>
 </head>
@@ -466,11 +537,11 @@ h2, h3, h4, h5, h6 {
         <div class="col-md-6 text-white mb-4">
           <h1><span>EBO2 Ozone Therapy:</span> Revolutionary Blood Detox & Rejuvenation</h1>
           <p class="text-white">Experience the next generation of wellness with EBO2 Ozone Therapy, a breakthrough treatment designed to purify, oxygenate, and rejuvenate your blood at a cellular level.</p>
-          <a href="#" class="btn btn-primary">Schedule a Consult</a>
+          <div class="text-center"><a href="#" class="btn btn-primary">Schedule a Consult</a></div>
         </div>
         <div class="col-md-6">
           <div class="form-box">
-            <h5 class="text-center mb-3">Get In Touch With Us</h5>
+            <h5 class="text-center mb-3 text-black">Get In Touch With Us</h5>
             <form>
               <div class="row g-2">
                 <div class="col-md-6">
@@ -568,59 +639,60 @@ h2, h3, h4, h5, h6 {
 </section>
 
   <!-- Benefits Section -->
-  <div class="container-custom container mb-5">
-    <div class="row">
-  <!-- Left Image Section -->
-   <div class="col-lg-8 gaping">
-  <div class="image-section">
-    <img src="image/logos/Mask_group.jpg" alt="EBO2 Treatment">
-  </div>
-  </div>
-
-  <!-- Right Slider Card -->
-   <div class="col-lg-4">
-  <div id="ebo2Slider" class="carousel slide card-slider" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <h4>Major <span class="highlight">Benefits</span> of EBO2</h4>
-        <p><strong>1. BENEFIT</strong></p>
-        <h5><strong>Reduces Inflammation</strong></h5>
-        <ul>
-          <li>Stimulates pathways that decrease systemic Inflammation</li>
-          <li>You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
-          <li>Perfect for autoimmune conditions</li>
-        </ul>
-        <a href="#" class="btn-schedule">Schedule a Consult</a>
+   <section class="py-5">
+  <div class="container mb-5">
+  <div class="row">
+    <!-- Left Image Section -->
+    <div class="col-lg-8 mb-4 mb-lg-0">
+      <div class="image-section newimg">
+        <img src="image/logos/Mask_group.jpg" alt="EBO2 Treatment" class="img-fluid rounded-3">
       </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <h4>Major <span class="highlight">Benefits</span> of EBO2</h4>
-        <p><strong>2. BENEFIT</strong></p>
-        <h5><strong>Boosts Energy</strong></h5>
-        <ul>
-          <li>Stimulates pathways that decrease systemic Inflammation</li>
-          <li>You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
-          <li>Perfect for autoimmune conditions</li>
-        </ul>
-        <a href="#" class="btn-schedule">Schedule a Consult</a>
-      </div>
-
     </div>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#ebo2Slider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#ebo2Slider" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
+    <!-- Right Slider Card -->
+    <div class="col-lg-4">
+      <div id="ebo2Slider" class="carousel slide card-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <h4>Major <span class="highlight">Benefits</span> of EBO2</h4>
+            <p><strong>1. BENEFIT</strong></p>
+            <h5><strong>Reduces Inflammation</strong></h5>
+            <ul>
+              <li>Stimulates pathways that decrease systemic Inflammation</li>
+              <li>You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
+              <li>Perfect for autoimmune conditions</li>
+            </ul>
+            <a href="#" class="btn-schedule">Schedule a Consult</a>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <h4>Major <span class="highlight">Benefits</span> of EBO2</h4>
+            <p><strong>2. BENEFIT</strong></p>
+            <h5><strong>Boosts Energy</strong></h5>
+            <ul>
+              <li>Stimulates pathways that decrease systemic Inflammation</li>
+              <li>You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
+              <li>Perfect for autoimmune conditions</li>
+            </ul>
+            <a href="#" class="btn-schedule" >Schedule a Consult</a>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#ebo2Slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#ebo2Slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-</div>
+</section>
+
 
   <!-- Discover Section -->
   <section class="py-5 gapping">
@@ -631,8 +703,8 @@ h2, h3, h4, h5, h6 {
         <div class="col-md-4 theborder">
           <div class="info-card">
             <img src="image/logos/powereboo1.png" class="img-fluid rounded mb-3" alt="">
-            <h5>What Makes EBO2 Different?</h5>
-            <p>Unlike traditional ozone therapy that treats small blood portions, EBO2 processes 4-6 litres of your blood through:</p>
+            <h5 class="text-start">What Makes EBO2 Different?</h5>
+            <p class="text-start">Unlike traditional ozone therapy that treats small blood portions, EBO2 processes 4-6 litres of your blood through:</p>
              <ul class="text-start">
             <li>Advanced filtration</li>
               <li>Ozonation & oxygenation</li>
@@ -645,7 +717,7 @@ h2, h3, h4, h5, h6 {
         <div class="col-md-4 theborder">
           <div class="info-card">
             <img src="image/logos/powereboo2.png" class="img-fluid rounded mb-3" alt="">
-            <h5>Conditions Can Be Treated</h5>
+            <h5 class="text-start">Conditions Can Be Treated</h5>
             <ul class="text-start">
                 <li>Autoimmune diseases</li>
               <li>Cardiovascular disease</li>
@@ -656,13 +728,13 @@ h2, h3, h4, h5, h6 {
               <li>Rheumatoid arthritis</li>
               <li>Glyphosate toxicity</li>
             </ul>
-            <a href="#" class="btn btn-primary mt-2">Schedule a Consult</a>
+            <a href="#" class="btn btn-primary mt-2" style="margin-top: 77px !important;">Schedule a Consult</a>
           </div>
         </div>
         <div class="col-md-4 theborder">
           <div class="info-card">
             <img src="image/logos/powereboo3.png" class="img-fluid rounded mb-3" alt="">
-            <h5>Why Choose Conscious Medicine?</h5>
+            <h5 class="text-start">Why Choose Conscious Medicine?</h5>
             <ul class="text-start">
               <li>State-of-the-art equipment and protocols</li>
               <li>Expert medical supervision</li>
@@ -670,7 +742,7 @@ h2, h3, h4, h5, h6 {
               <li>Proven track record of patient success</li>
               <li>Comprehensive follow-up care</li>
             </ul>
-            <a href="#" class="btn btn-primary mt-2">Schedule a Consult</a>
+            <a href="#" class="btn btn-primary mt-2" style="margin-top: 110px !important;">Schedule a Consult</a>
           </div>
         </div>
       </div>
@@ -687,7 +759,7 @@ h2, h3, h4, h5, h6 {
             <img src="image/logos/logo.png" width="112" height="112" alt="icon" width="50" height="50" class="me-3">
           <div class="d-flex align-items-center mb-3">
            
-            <div>
+            <div class="limitedm">
               <h5>LIMITED AVAILABILITY -</h5>
               <h3>Book Your Session Today</h3>
               <p>
@@ -736,10 +808,26 @@ Fill out this form and connect with us.
   <footer>
     <div class="container text-center">
       <h5 class="fw-bold text-white">CONSCIOUS MEDICINE</h5>
-      <p class="small mt-3">© 2025 Conscious Medicine | All rights reserved.</p>
+      <p class="small mt-3 text-white">*This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK. These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All content and information we provide here are for informational and educational purposes only, do not constitute medical advice, and do not establish any kind of patient-client relationship by your use of the information provided. Although we strive to provide accurate general information, the information presented here is not a substitute for any kind of professional advice, and you should not rely solely on this information. Always discuss any changes to your medical treatment with your medical provider. If you're not willing to accept that, please DO NOT GET OUR INFORMATION.</p>
       <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
     </div>
   </footer>
+
+  <section class="py-2" style="background-color: #c06c3e;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 text-white belowfooter">© 2025 CONSCIOUS MEDICINE PC. ALL RIGHTS RESERVED.</div>
+      <div class="col-lg-4">
+        <div class="text-end belowfootericons">
+        <img src="image/logos/Facebook.png" alt="">
+        <img src="image/logos/Instagram.png" alt="">
+        <img src="image/logos/LinkedIn.png" alt="">
+        <img src="image/logos/Youtube.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
