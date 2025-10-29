@@ -758,6 +758,13 @@ form button:hover {
   .ebo2-image {
     height: 340px;
   }
+  .ebo2-image img{
+        position: absolute;
+    right: 0;
+    /* max-width: none; */
+    width: 500px;
+    bottom: -51px;
+  }
 }
 
 /* 992px ↓ (Tablet Landscape) */
@@ -916,13 +923,14 @@ form button:hover {
   position: relative;
   padding: 80px;
   height: 100vh;
+  width: 1300px;
 }
 
 /* Slider container */
 .benefits-slider {
   position: absolute;
   overflow: hidden;
-  right: 0px;
+  right: -350px;
   bottom: -80px;
 }
 
@@ -1028,10 +1036,17 @@ form button:hover {
 @media (max-width: 1700px) {
   .benefits-content {
     padding: 70px;
-    height: auto;
+    height: 100vh;
   }
   .benefits-text h2 { font-size: 44px; }
   .benefits-text h3 { font-size: 30px; }
+
+  .slide{
+    width: 360px;
+  }
+  .benefits-slider{
+    right: -100px;
+  }
 }
 
 /* 1400px ↓ */
@@ -1094,7 +1109,25 @@ form button:hover {
   .benefits-content {
     padding: 50px 40px;
     text-align: center;
+    width: 850px;
   }
+  .benefits-slider{
+    bottom: -531px;
+        right: 0px;
+        bottom: -272px;
+  }
+
+.discover-section{
+  margin-top: 100px !important;
+}
+
+.discover-section h2{
+  padding: 10px;
+  font-size: 40px !important;
+}
+.discover-section p{
+  
+}
 
   .benefits-text h2 { font-size: 34px; }
   .benefits-text h3 { font-size: 24px; }
@@ -1325,6 +1358,7 @@ form button:hover {
       background-color: #a96233;
     }
 
+   
 
   /* Footer section  */
 
