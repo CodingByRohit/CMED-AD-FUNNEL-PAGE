@@ -313,6 +313,10 @@ h2, h3, h4, h5, h6 {
       color: #c06c3e;
     }
 
+    .card-title{
+        color: #f15a29;
+    }
+
     /* Card Style */
     .struggle-card {
       background-color: #f9f9f9;
