@@ -5,613 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conscious Medicine - EBO2 Ozone Therapy</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: 'inter', sans-serif;
+    .container
+    {
+      width: 1760px;
     }
 
-    /* Colors */
-    :root {
-      --primary-color: #c55b26;
-      --secondary-color: #333;
-      --light-bg: #f9f9f9;
-    }
-
-    h1 {
-  font-size: 60px !important;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-h3{
-    font-size: 48px;
-}
-
-p {
-  font-size: 24px !important;
-  color: #222222;
-    line-height: 1.6;
-}
-
-li {
-  font-size: 21px !important;
-  color: #222222;
-  line-height: 1.6;
-}
-
-/* Optional - for better overall text look */
-h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.btnalign{
-    text-align: left;
-}
-
-.headingform
-{
-    font-size: 40px;
-}
-.ep-wrapper{
-    height: 400px;
-}
-    /* Hero Section */
-    .hero {
-      background: url('image/banner-bg.png') center/cover no-repeat;
-      color: #fff;
-      position: relative;
-      padding: 100px 0;
-      height: 100vh;
-    }
-
-    .hero-overlay {
-      /* background: rgba(0, 0, 0, 0.6); */
-      position: absolute;
-      inset: 0;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero h1 span {
-      color: var(--primary-color);
-    }
-
-    .form-box {
-      background: #fff;
-      border-radius: 8px;
-      /* padding: 25px; */
-      /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); */
-    }
-
-    .btn-primary {
-      background-color: var(--primary-color);
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background-color: #a74a1f;
-    }
-
-    /* Struggling Section */
-       /* Section Styling */
-    .struggling-section {
-      text-align: center;
-      padding: 80px 0;
-      background-color: #ffffff;
-    }
-
-    .struggling-section h2 {
-      font-size: 42px;
-      font-weight: 700;
-      margin-bottom: 60px;
-    }
-
-    .struggling-section h2 span {
-      color: #c06c3e;
-    }
-
-    /* Card Style */
-    .struggle-card {
-      background-color: #f9f9f9;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      padding: 25px;
-      text-align: left;
-      transition: 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      height: 100%;
-    }
-
-    .formghl{
-     
-    }
-
-    .ep-wrapper{
-      height: 440px;
-    }
-    .content-section{
-      height: 400px;
-    }
-
-    .struggle-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
-
-    .struggle-card img {
-      width: 112px;
-      height: 112px;
-      object-fit: contain;
-    }
-
-    .struggle-card p {
-      font-size: 21px;
-      color: #333;
-      margin: 0;
-      font-weight: 500;
-    }
-
-    /* Button */
-    .btn-schedule {
-      background-color: #c06c3e;
-      color: #fff;
-      border: none;
-      padding: 10px 25px;
-      border-radius: 5px;
-      font-size: 18px;
-      margin-top: 40px;
-      transition: 0.3s;
-    }
-
-    .btn-schedule:hover {
-      background-color: #a2552d;
-    }
-
-    @media (max-width: 768px) {
-      .struggling-section h2 {
-        font-size: 32px;
+    @media (max-width:576px) {
+      .ebo2{
+        margin-top: 0px;
       }
+      .benefitss{
+        margin-top: 425px;
+      }
+
+      .card-slider{
+        width: 100% !important;
+        max-width: 400px;
+      }
+      .carousel-control-prev{
+        transform: translate(400px, -3px) !important;
+      }
+
+      p{
+        font-size: 12px !important;
+      }
+
+      .btn{
+        font-size: 10px;
+      }
+
+      h3{
+        font-size: 25px;
+      }
+      li{
+        font-size: 12px !important;
+      }
+
       .struggle-card p {
-        font-size: 14px !important;
+        font-size: 12px !important;
+
       }
-      .struggle-card img{
-        width: 65px;
-        height: 65px;
-      }
-      .struggle-card{
-        padding: 15px;
-      }
-    }
-    /* What is EBO2 */
-   .section-title span {
-    color: var(--primary-color);
-  }
-
-  .newdesign {
-    position: relative;
-    background: #F8F9FA;
-    padding: 60px 0; /* Instead of fixed height */
-    margin-top: 150px;
-  }
-
-  .newdesign small {
-    font-weight: 500;
-    color: #555;
-  }
-
-  .newdesign p {
-    color: #333;
-    line-height: 1.6;
-  }
-
-  .override {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 500px;
-    transform: translateX(-36%);
-  }
-
-  /* RESPONSIVE FIXES */
-  @media (max-width: 991px) {
-    .newdesign {
-      margin-top: 100px;
-      text-align: center;
-      padding-bottom: 0;
-    }
-
-    .override {
-      position: relative;
-      
-      margin-top: 30px;
-      width: 100%;
-      max-width: 100%;
-      transform: translate(10px, 10px);
-    }
-  }
-
-  @media (max-width: 576px) {
-    .newdesign {
-      margin-top: 60px;
-      padding: 40px 15px;
-    }
-
-    .newdesign h3 {
-      font-size: 1.6rem;
-    }
-
-    .newdesign p {
-      font-size: 0.95rem;
-    }
-  }
-
-  /* discover  */
-
-  .info-card{
-    text-align: start;
-    border: 1px solid #1F263670;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .info-card h5{
-    color: #c55b26;
-  }
-
-  .cardsbtn1 {
-    margin-top: 77px !important;
-  }
-
-  .cardsbtn2 {
-    margin-top: 110px !important;
-   
-  }
-
-
-
-  .theborder
-  /* {
-    border: 1px solid #1F263670;
-    padding: 20px;
-    border-radius: 10px;
-
-  } */
-
-    /* benefits  */
-
-.newimg{
-     position: relative;
-}
-
- .image-section {
-  position: relative; /* Make the image section relative */
-  width: 100%;
-  height: auto;
-}
-
-.image-section img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.card-slider {
-  position: absolute; /* Position absolute to overlap the image */
-  width: 100%;
-  max-width: 680px; /* Maximum width for large screens */
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 20px;
-  transform: translate(-43%, 100%);
-  margin-top: 10px;
-}
-
-.card-slider h4 {
-  font-weight: bold;
-}
-
-.highlight {
-  color: #f15a29;
-}
-
-/* Button Styles */
-.btn-schedule {
-  border: 1px solid #f15a29;
-  color: #f15a29;
-  background-color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.btn-schedule:hover {
-  background-color: #f15a29;
-  color: white;
-}
-
-.carousel-inner{
-    overflow: visible;
-}
-
-/* Carousel Controls */
-.carousel-control-next {
-  width: 30px;
-  height: 30px;
-  background-color: #f15a29;
-  border-radius: 50%;
-  opacity: 0.9;
-  top: auto;
-  bottom: 10px;
-  transform: translate(-17px, 2px);
-}
-
-.carousel-control-prev{
-  width: 30px;
-  height: 30px;
-  background-color: #f15a29;
-  border-radius: 50%;
-  opacity: 0.9;
-  top: auto;
-  bottom: 10px;
-  transform: translate(578px, 10%);
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-size: 50%;
-}
-
-/* RESPONSIVE STYLES */
-@media (max-width: 992px) {
-  .card-slider {
-    max-width: 65%;
-        margin: 0px auto;
-  }
-
-  .struggle-card img{
-    width: 80px;
-    height: 80px;
-  }
-  .struggle-card p{
-    font-size: 18px !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .card-slider {
-    max-width: 100%; /* Full width on mobile */
-    margin: 10px auto; /* Center the slider */
-   transform: translate(0%, -25%) !important;
-  }
-
-  .carousel-control-prev {
-    width: 25px;
-    height: 25px; /* Smaller carousel controls */
-    transform: translate(440px, 10px) !important;
-  }
-
-
-  .carousel-control-next {
-    width: 25px;
-    height: 25px; /* Smaller carousel controls */
-  }
-
-  .btn-schedule {
-    font-size: 12px;
-    padding: 5px 10px;
-    width: 100%;  /* Full-width button on mobile */
-  }
-
-  .card-slider h4 {
-    font-size: 22px; /* Adjust heading size for mobile */
-  }
-
-  .cardsbtn1 {
-    margin-top: 10px !important;
-  }
-
-  .cardsbtn2 {
-    margin-top: 10px !important;
-   
-  }
-
-  .highlight {
-    font-size: 22px; /* Adjust highlight font size for mobile */
-  }
-
-  .card-slider p, .card-slider ul {
-    font-size: 14px; /* Reduce text size for mobile */
-  }
-}
-
-
-
-    /* Limited section  */
-
-   /* Section Background */
-    .contact-section {
-      position: relative;
-      width: 100%;
-      background-color: #f7f8f9;
-      padding: 40px 0;
-      overflow: visible;
-      margin-top: 100px;
-    }
-
-    .gapping{
-        margin-top: 150px;
-    }
-
-    /* Left Content */
-    .contact-content {
-      padding-left: 100px;
-    }
-
-    .contact-content h5 {
-      font-weight: bold;
-      color: #c06c3e;
-      letter-spacing: 0.5px;
-      font-size: 46px;
-    }
-
-    .contact-content h3 {
-      font-weight: 700;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-
-    .contact-content p {
-      /* max-width: 400px; */
-      color: #555;
-    }
-
-    /* Floating Form Card */
-    .form-card {
-      position: absolute;
-      top: -10%;
-      right: 0%;
-      /* transform: translateY(-50%); */
-      transform: translatex(-140%);
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      width: 420px;
-      z-index: 10;
-    }
-
-    .form-card h5 {
-      font-weight: 700;
-      margin-bottom: 25px;
-    }
-
-    .form-control {
-      border-radius: 4px;
-      box-shadow: none;
-    }
-
-    .btn-submit {
-      background-color: #c06c3e;
-      color: white;
-      border: none;
-      padding: 8px 20px;
-      border-radius: 4px;
-      transition: 0.3s;
-    }
-
-    .btn-submit:hover {
-      background-color: #a35630;
-    }
-
-    /* Responsive */
-    @media (max-width: 992px) {
-      .contact-content {
-        padding-left: 40px;
-      }
-
-      .form-card {
-        position: static;
-        transform: none;
-        margin: 30px auto 0;
-        width: 90%;
-      }
-    }
-
-    @media (max-width:768px) {
-        .contact-content{
-            text-align: center;
-            padding-left: 0px;
-        }
-
-        .limitedm h5{
-            font-size: 28px;
-        }
-        .limitedm h3{
-            font-size: 22px;
-        }
-    }
-
-    footer {
-      background: #111;
-      color: #ccc;
-      padding: 30px 0;
-      font-size: 14px;
-      margin-top: 150px;
-    }
-
-    footer a {
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width:768px){
-        h1{
-            font-size: 30px !important;
-            text-align: center;
-        }
-
-        .hero-content{
-            padding-top: 50x !important;
-        }
-        p{
-            font-size: 14px !important;
-            text-align: center;
-        }
-
-        h2, h3, h4, h5, h6 {
-            font-size:28px;
-        }
-        .newdesign{
-            margin-top:0px;
-        }
-        li{
-            font-size: 14px !important;
-        }
-
-        .btn{
-            font-size: 12px !important;
-            margin: 0px !important;
-        }
-
-        .belowfootericons{
-            text-align: center !important;
-        }
-        .belowfooter{
-            text-align: center !important;
-            font-size: 14px !important;
-        }
-        .hero-content h1{
-            font-size: 45px;
-        }
-
-        .card-slider{
-            transform: translate(21%, -41%);
-        }
-        .btnalign{
-    text-align: center;
-}
-
-.carousel-control-prev{
-  transform: translate(300px, 10%);
-}
-
-footer{
-    margin-top:20px;
-}
-
     }
   </style>
 </head>
@@ -633,15 +68,15 @@ footer{
         <div class="col-md-6 col-sm-12 text-white mb-4">
           <h1><span>EBO2 Ozone Therapy:</span> Revolutionary Blood Detox & Rejuvenation</h1>
           <p class="text-white">Experience the next generation of wellness with EBO2 Ozone Therapy, a breakthrough treatment designed to purify, oxygenate, and rejuvenate your blood at a cellular level.</p>
-          <div class="btnalign"><a href="#" class="btn btn-primary">Schedule a Consult</a></div>
+          <div class="btnalign"><a href="#" class="btn herobtn">Schedule a Consult</a></div>
         </div>
         <div class="col-md-6 col-sm-12">
          
            
-            <iframe
-    src="https://api.leadconnectorhq.com/widget/form/xf9RmNemBKdjyOzoMUCj"
+           <iframe
+    src="https://api.leadconnectorhq.com/widget/form/l5Qj2aRC5J3YSnwn3m8d"
     style="width:100%;height:100%;border:none;border-radius:16px"
-    id="inline-xf9RmNemBKdjyOzoMUCj" 
+    id="inline-l5Qj2aRC5J3YSnwn3m8d" 
     data-layout="{'id':'INLINE'}"
     data-trigger-type="alwaysShow"
     data-trigger-value=""
@@ -649,13 +84,14 @@ footer{
     data-activation-value=""
     data-deactivation-type="neverDeactivate"
     data-deactivation-value=""
-    data-form-name="Landing Page(Joint Injection)"
-    data-height="560"
-    data-layout-iframe-id="inline-xf9RmNemBKdjyOzoMUCj"
-    data-form-id="xf9RmNemBKdjyOzoMUCj"
-    title="Landing Page(Joint Injection)"
+    data-form-name="Landing Page(Ebo2)"
+    data-height="601"
+    data-layout-iframe-id="inline-l5Qj2aRC5J3YSnwn3m8d"
+    data-form-id="l5Qj2aRC5J3YSnwn3m8d"
+    title="Landing Page(Ebo2)"
         >
 </iframe>
+
 
           
         </div>
@@ -671,38 +107,38 @@ footer{
 
     <!-- Cards Row -->
     <div class="row g-4">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="struggle-card">
           <img src="image/logos/Group 39945.png" alt="icon">
           <p>Chronic fatigue and low energy?</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="struggle-card">
           <img src="image/logos/struggling2.png" alt="icon">
           <p>Persistent inflammation and autoimmune issues?</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="struggle-card">
           <img src="image/logos/struggling3.png" alt="icon">
           <p>Brain fog and poor sleep quality?</p>
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="struggle-card">
           <img src="image/logos/struggling4.png" alt="icon">
           <p>Lyme disease or mold exposure symptoms?</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="struggle-card">
           <img src="image/logos/struggling5.png" alt="icon">
           <p>High cholesterol and cardiovascular concerns?</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6">
         <div class="struggle-card">
           <img src="image/logos/struggling6.png" alt="icon">
           <p>Toxin buildup and slow recovery after illness or stress?</p>
@@ -711,16 +147,67 @@ footer{
     </div>
 
     <!-- Button -->
-    <button class="btn-schedule mt-4">Schedule a Consult</button>
+    <button class="btn-schedule mt-4" style="background: #f15a29; color: white;">Schedule a Consult</button>
   </div>
 </section>
 
+
+  <!-- <section style="margin-top: 400px;">
+    <div class="newebo2" style="background-color: #F1F4F766;position: relative;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 whatisebo2">
+        
+          <small>Wnat to Know?</small>
+          <h2>What is <span> EBO2 </span></h2>
+          <p> Extracorporeal Blood Oxygenation + Ozonation is an advanced therapy that filters,
+          ozonates, and revitalizes your entire blood supply. Watch as your dark, toxin-laden
+          blood transforms into bright, clean red blood — literally seeing your health improve
+          before your eyes!</p>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 whatisebo22">
+          <img src="image/logos/what_is_eboo2.png" alt="">
+        </div>
+    </div>
+    
+  </section> -->
+
+
+ <section class="ebo2 py-5" style="background-color:#f4f8fc;height: 100%;">
+  <div class="mainsss contaier-fluid p-0 m-0" style="height: 350px;">
+    <div class="container">
+      <div class="row">
+        <!-- Left -->
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <small class="text-muted d-block mb-2">Want to Know?</small>
+          <h2 class="fw-bold mb-3">What is <span style="color:#f15a29;">EBO2</span>?</h2>
+          <p class="text-secondary mb-4">
+            Extracorporeal Blood Oxygenation + Ozonation is an advanced therapy that filters, ozonates, and revitalizes your entire blood supply. Watch as your dark, toxin-laden blood transforms into bright, clean red blood — literally seeing your health improve before your eyes!
+          </p>
+          <a href="#" class="btn btn-lg" style="background:#f15a29;color:white;">Schedule a Consult</a>
+        </div>
+        <!-- Right -->
+        <div class="col-lg-6 text-center rightebo2">
+          <img src="image/logos/what_is_eboo2.png" alt="EBO2" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+
+
   <!-- What is EBO2 -->
-  <section class="py-5 newdesign">
+  <!-- <section class="py-5 newdesign">
   <div class="container">
-    <div class="row align-items-center">
-      <!-- Left text -->
-      <div class="col-md-6">
+    <div class="row ">
+     
+      <div class="col-md-6 col-xl-6">
         <small>Want to know?</small>
         <h3 class="section-title">What is <span>EBO2?</span></h3>
         <p>
@@ -732,16 +219,16 @@ footer{
         <a href="#" class="btn btn-primary mt-3" style="background:#c55b26; border:none;">Schedule a Consult</a>
       </div>
 
-      <!-- Right image -->
-      <div class="col-md-6 text-center">
+     
+      <div class="col-md-6 col-xl-6 text-center">
         <img src="image/logos/what_is_eboo2.png" class="img-fluid rounded override" alt="EBO2 Therapy" />
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
   <!-- Benefits Section -->
-   <section class="py-5">
+   <section class="py-5 benefitss" >
   <div class="container mb-5">
   <div class="row">
     <!-- Left Image Section -->
@@ -804,7 +291,7 @@ footer{
       <div class="row g-4">
         <div class="col-md-4 theborder">
           <div class="info-card">
-            <img src="image/logos/powereboo1.png" class="img-fluid rounded mb-3" alt="">
+            <img src="image/logos/powereboo1.png" width="100%" class="img-fluid rounded mb-3" alt="">
             <h5 class="text-start">What Makes EBO2 Different?</h5>
             <p class="text-start">Unlike traditional ozone therapy that treats small blood portions, EBO2 processes 4-6 litres of your blood through:</p>
              <ul class="text-start">
@@ -818,7 +305,7 @@ footer{
         </div>
         <div class="col-md-4 theborder">
           <div class="info-card">
-            <img src="image/logos/powereboo2.png" class="img-fluid rounded mb-3" alt="">
+            <img src="image/logos/powereboo2.png" width="100%" class="img-fluid rounded mb-3" alt="">
             <h5 class="text-start">Conditions Can Be Treated</h5>
             <ul class="text-start">
                 <li>Autoimmune diseases</li>
@@ -835,7 +322,7 @@ footer{
         </div>
         <div class="col-md-4 theborder">
           <div class="info-card">
-            <img src="image/logos/powereboo3.png" class="img-fluid rounded mb-3" alt="">
+            <img src="image/logos/powereboo3.png" width="100%" class="img-fluid rounded mb-3" alt="">
             <h5 class="text-start">Why Choose Conscious Medicine?</h5>
             <ul class="text-start">
               <li>State-of-the-art equipment and protocols</li>
@@ -876,11 +363,10 @@ Fill out this form and connect with us.
 
         <div class="col-md-6 col-sm-12 formghl">
           
-          
-            <iframe
-    src="https://api.leadconnectorhq.com/widget/form/xf9RmNemBKdjyOzoMUCj"
+          <iframe
+    src="https://api.leadconnectorhq.com/widget/form/l5Qj2aRC5J3YSnwn3m8d"
     style="width:100%;height:100%;border:none;border-radius:16px"
-    id="inline-xf9RmNemBKdjyOzoMUCj" 
+    id="inline-l5Qj2aRC5J3YSnwn3m8d" 
     data-layout="{'id':'INLINE'}"
     data-trigger-type="alwaysShow"
     data-trigger-value=""
@@ -888,11 +374,11 @@ Fill out this form and connect with us.
     data-activation-value=""
     data-deactivation-type="neverDeactivate"
     data-deactivation-value=""
-    data-form-name="Landing Page(Joint Injection)"
-    data-height="560"
-    data-layout-iframe-id="inline-xf9RmNemBKdjyOzoMUCj"
-    data-form-id="xf9RmNemBKdjyOzoMUCj"
-    title="Landing Page(Joint Injection)"
+    data-form-name="Landing Page(Ebo2)"
+    data-height="601"
+    data-layout-iframe-id="inline-l5Qj2aRC5J3YSnwn3m8d"
+    data-form-id="l5Qj2aRC5J3YSnwn3m8d"
+    title="Landing Page(Ebo2)"
         >
 </iframe>
 
@@ -909,7 +395,7 @@ Fill out this form and connect with us.
   <!-- Footer -->
   <footer>
     <div class="container text-center">
-      <h5 class="fw-bold text-white"> <img src="image/logos/logo.png" alt=""> CONSCIOUS MEDICINE</h5>
+      <h5 class="fw-bold text-white" > <img width="70" src="image/logos/logo.png" alt=""> CONSCIOUS MEDICINE</h5>
       <p class="small mt-3 text-white">*This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK. These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All content and information we provide here are for informational and educational purposes only, do not constitute medical advice, and do not establish any kind of patient-client relationship by your use of the information provided. Although we strive to provide accurate general information, the information presented here is not a substitute for any kind of professional advice, and you should not rely solely on this information. Always discuss any changes to your medical treatment with your medical provider. If you're not willing to accept that, please DO NOT GET OUR INFORMATION.</p>
       <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
     </div>
@@ -918,7 +404,7 @@ Fill out this form and connect with us.
   <section class="py-2" style="background-color: #c06c3e;">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 text-white belowfooter">© 2025 CONSCIOUS MEDICINE PC. ALL RIGHTS RESERVED.</div>
+      <div class="col-lg-8 text-white belowfooter"><p class="text-white">© 2025 CONSCIOUS MEDICINE PC. ALL RIGHTS RESERVED.</p></div>
       <div class="col-lg-4">
         <div class="text-end belowfootericons">
         <img src="image/logos/Facebook.png" alt="">
