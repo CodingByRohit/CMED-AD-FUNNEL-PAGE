@@ -1,0 +1,825 @@
+body {
+      font-family: 'inter', sans-serif;
+    }
+
+    .container
+    {
+        width: 100% !important;
+        max-width: 1760px !important;
+        padding: 0 40px !important;
+    }
+
+    /* Colors */
+    :root {
+      --primary-color: #c55b26;
+      --secondary-color: #333;
+      --light-bg: #f9f9f9;
+    }
+
+    h1 {
+  font-size: 60px !important;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3{
+    font-size: 48px;
+}
+
+p {
+  font-size: 24px !important;
+  color: #222222;
+    line-height: 1.6;
+}
+
+li {
+  font-size: 21px !important;
+  color: #222222;
+  line-height: 1.6;
+}
+
+/* Optional - for better overall text look */
+h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.btnalign{
+    text-align: left;
+}
+
+.headingform
+{
+    font-size: 40px;
+}
+.ep-wrapper{
+    height: 485px;
+}
+
+.herobtn{
+    border: 1px solid white;
+    color: white;
+}
+
+.herobtn:hover{
+    border: 1px solid #c06c3e;
+    background-color: #c06c3e;
+}
+/* .ebo2{
+    min-height: 400px; 
+    background-color: #F7F8F9; 
+    display: flex; 
+    align-items: flex-end;
+    width: 100%;
+    height: 600px;
+    margin-top: 175px !important;
+} */
+
+    /* .newebo2{
+        margin-top: 130px;
+    } */
+
+
+    /* EBO2 section start  */
+
+     .ebo2{
+        margin-top: 326px;
+    }
+
+    .rightebo2{
+        margin-top: -398px;
+    }
+
+    @media (max-width: 1600px) and (min-width: 1400px){
+        .ebo2 {
+        margin-top: 300px;
+    }
+    .rightebo2 {
+        margin-top: -354px;
+    }
+}
+
+ @media (max-width: 1400px) and (min-width: 1200px){
+        .ebo2 {
+        margin-top: 300px;
+    }
+    .rightebo2 {
+        margin-top: -151px;
+    }
+}
+
+ @media (max-width: 1200px) and (min-width: 992px){
+        .ebo2 {
+        margin-top: 300px;
+    }
+    .rightebo2 {
+        margin-top: -61px;
+    }
+}
+
+ @media (max-width: 992px) and (min-width: 768px){
+        .ebo2 {
+        margin-top: 200px;
+    }
+    .rightebo2 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ebo2 {
+        margin-top: 100px;
+    }
+    .rightebo2 {
+        margin-top: 20px;
+    }
+}
+    
+
+
+
+
+    /* Hero Section */
+    .hero {
+      background: url('image/banner-bg.png') center/cover no-repeat;
+      color: #fff;
+      position: relative;
+      padding: 100px 0;
+      height: 100vh;
+    }
+
+    .hero-overlay {
+      /* background: rgba(0, 0, 0, 0.6); */
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 span {
+      color: var(--primary-color);
+    }
+
+    .form-box {
+      background: #fff;
+      border-radius: 8px;
+      /* padding: 25px; */
+      /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); */
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #a74a1f;
+    }
+
+    /* Struggling Section */
+       /* Section Styling */
+    .struggling-section {
+      text-align: center;
+      padding: 80px 0;
+      background-color: #ffffff;
+    }
+
+    .struggling-section h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 60px;
+    }
+
+    .struggling-section h2 span {
+      color: #c06c3e;
+    }
+
+    /* Card Style */
+    .struggle-card {
+      background-color: #f9f9f9;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: left;
+      transition: 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      height: 100%;
+    }
+
+    
+
+    .ep-wrapper{
+      height: 485px;
+    }
+    .content-section{
+      height: 400px;
+    }
+
+    .struggle-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .struggle-card img {
+      width: 112px;
+      height: 112px;
+      object-fit: contain;
+    }
+
+    .struggle-card p {
+      font-size: 21px;
+      color: #333;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    /* Button */
+    .btn-schedule {
+      background-color: #c06c3e;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 40px;
+      transition: 0.3s;
+    }
+
+    
+
+    @media (max-width: 768px) {
+      .struggling-section h2 {
+        font-size: 32px;
+      }
+      .struggle-card p {
+        font-size: 14px !important;
+      }
+      .struggle-card img{
+        width: 65px;
+        height: 65px;
+      }
+      .struggle-card{
+        padding: 15px;
+      }
+    }
+    /* What is EBO2 */
+   /* .section-title span {
+    color: var(--primary-color);
+  }
+
+  
+
+  .newdesign {
+    position: relative;
+    background: #F8F9FA;
+    padding: 60px 0; 
+    margin-top: 150px;
+  }
+
+  .newdesign small {
+    font-weight: 500;
+    color: #555;
+  }
+
+  .newdesign p {
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .override {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    transform: translateX(-36%);
+  } */
+
+  /* RESPONSIVE FIXES */
+  /* @media (max-width: 991px) {
+    .newdesign {
+      margin-top: 100px;
+      text-align: center;
+      padding-bottom: 0;
+    }
+
+    .override {
+      position: relative;
+      
+      margin-top: 30px;
+      width: 100%;
+      max-width: 100%;
+      transform: translate(10px, 10px);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .newdesign {
+      margin-top: 60px;
+      padding: 40px 15px;
+    }
+
+    .newdesign h3 {
+      font-size: 1.6rem;
+    }
+
+    .newdesign p {
+      font-size: 0.95rem;
+    }
+  } */
+
+  /* discover  */
+
+  .info-card{
+    text-align: start;
+    border: 1px solid #1F263670;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .info-card h5{
+    color: #c55b26;
+  }
+
+  /* .cardsbtn1 {
+    margin-top: 77px !important;
+  } */
+
+  .cardsbtn2 {
+    margin-top: 110px !important;
+   
+  }
+
+
+
+  .theborder
+  /* {
+    border: 1px solid #1F263670;
+    padding: 20px;
+    border-radius: 10px;
+
+  } */
+
+    /* benefits  */
+
+.newimg{
+     position: relative;
+}
+
+ .image-section {
+  position: relative; /* Make the image section relative */
+  width: 100%;
+  height: auto;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-slider {
+  position: absolute; /* Position absolute to overlap the image */
+  width: 100%;
+  max-width: 680px; /* Maximum width for large screens */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transform: translate(-43%, 100%);
+  margin-top: 10px;
+}
+
+.card-slider h4 {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #f15a29;
+}
+
+/* Button Styles */
+.btn-schedule {
+  border: 1px solid #f15a29;
+  color: #f15a29;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn-schedule:hover {
+  background-color: #f15a29;
+  color: white;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
+/* Carousel Controls */
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  background-color: #f15a29;
+  border-radius: 50%;
+  opacity: 0.9;
+  top: auto;
+  bottom: 10px;
+  transform: translate(-17px, 2px);
+}
+
+.carousel-control-prev{
+  width: 30px;
+  height: 30px;
+  background-color: #f15a29;
+  border-radius: 50%;
+  opacity: 0.9;
+  top: auto;
+  bottom: 10px;
+  transform: translate(578px, 10%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-size: 50%;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 992px) {
+  .card-slider {
+    max-width: 65%;
+        margin: 0px auto;
+  }
+
+  .struggle-card img{
+    width: 60px;
+    height: 60px;
+  }
+  .struggle-card p{
+    font-size: 16px !important;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  .card-slider {
+    max-width: 100%; /* Full width on mobile */
+    margin: 10px auto; /* Center the slider */
+   transform: translate(0%, -25%) !important;
+  }
+
+  .carousel-control-prev {
+    width: 25px;
+    height: 25px; /* Smaller carousel controls */
+    transform: translate(440px, 10px) !important;
+  }
+
+
+  .carousel-control-next {
+    width: 25px;
+    height: 25px; /* Smaller carousel controls */
+  }
+
+  .btn-schedule {
+    font-size: 12px;
+    padding: 5px 10px;
+    /* width: 100%;  */
+  }
+
+  .card-slider h4 {
+    font-size: 22px; /* Adjust heading size for mobile */
+  }
+
+  /* .cardsbtn1 {
+    margin-top: 10px !important;
+  } */
+
+  .cardsbtn2 {
+    margin-top: 10px !important;
+   
+  }
+
+  .highlight {
+    font-size: 22px; /* Adjust highlight font size for mobile */
+  }
+
+  .card-slider p, .card-slider ul {
+    font-size: 14px; /* Reduce text size for mobile */
+  }
+
+  /* .ebo2{
+    margin-top: 0px !important;
+  }
+  .newebo2{
+    margin-top: 10px !important;
+  } */
+
+}
+
+
+
+    /* Limited section  */
+
+   /* Section Background */
+    .contact-section {
+      position: relative;
+      width: 100%;
+      background-color: #f7f8f9;
+      padding: 40px 0;
+      overflow: visible;
+      margin-top: 100px;
+    }
+
+    .gapping{
+        margin-top: 150px;
+    }
+
+    /* Left Content */
+    .contact-content {
+      padding-left: 100px;
+    }
+
+    .contact-content h5 {
+      font-weight: bold;
+      color: #c06c3e;
+      letter-spacing: 0.5px;
+      font-size: 46px;
+    }
+
+    .contact-content h3 {
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contact-content p {
+      /* max-width: 400px; */
+      color: #555;
+    }
+
+    /* Floating Form Card */
+    .form-card {
+      position: absolute;
+      top: -10%;
+      right: 0%;
+      /* transform: translateY(-50%); */
+      transform: translatex(-140%);
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 420px;
+      z-index: 10;
+    }
+
+    .form-card h5 {
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .form-control {
+      border-radius: 4px;
+      box-shadow: none;
+    }
+
+    .btn-submit {
+      background-color: #c06c3e;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .btn-submit:hover {
+      background-color: #a35630;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .contact-content {
+        padding-left: 40px;
+      }
+
+      .form-card {
+        position: static;
+        transform: none;
+        margin: 30px auto 0;
+        width: 90%;
+      }
+    }
+
+    @media (max-width:768px) {
+        .contact-content{
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        .limitedm h5{
+            font-size: 28px;
+        }
+        .limitedm h3{
+            font-size: 22px;
+        }
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 30px 0;
+      font-size: 14px;
+      margin-top: 150px;
+    }
+
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width:768px){
+        h1{
+            font-size: 30px !important;
+            text-align: center;
+        }
+
+        /* .ebo2{
+            margin-top: 375px !important;
+            align-items: flex-start;
+            margin-top: 0px !important;
+        } */
+
+        /* .ebo2 h2{
+    text-align: center;
+  }
+
+  .newebo2 {
+    text-align: center;
+  }
+
+
+   .ebo2 p{
+    text-align: center;
+  } */
+
+        .hero-content{
+            padding-top: 50x !important;
+        }
+        p{
+            font-size: 14px !important;
+            text-align: center;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-size:28px;
+        }
+        .newdesign{
+            margin-top:0px;
+        }
+        li{
+            font-size: 14px !important;
+        }
+
+        .btn{
+            font-size: 12px !important;
+            margin: 0px !important;
+        }
+
+        .belowfootericons{
+            text-align: center !important;
+        }
+        .belowfooter{
+            text-align: center !important;
+            font-size: 14px !important;
+        }
+        .hero-content h1{
+            font-size: 45px;
+        }
+
+        .card-slider{
+            transform: translate(21%, -41%);
+        }
+        .btnalign{
+    text-align: center;
+}
+
+.carousel-control-prev{
+  transform: translate(300px, 10%);
+}
+
+footer{
+    margin-top:20px;
+}
+
+    }
+
+
+
+    @media (max-width:992px)
+    {
+        h1{
+            font-size: 40px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        h3{
+            font-size: 35px;
+        }
+
+        h5{
+            font-size: 20px;
+        }
+        .newdesign p{
+            font-size:20px !important;
+        }
+        li{
+            font-size: 16px !important;
+        }
+
+
+        /* .cardsbtn1{
+            margin-top: 50px !important;
+        } */
+
+        .carousel-control-prev{
+   transform: translate(519px, -15%);
+           }
+           .carousel-control-next{
+           transform: translate(-12px, -15%);
+           }
+
+           .contact-content img{
+            width: 50px;
+            height: 50px;
+           }
+
+           .contact-content h5{
+            font-size: 25px;
+           }
+
+
+    }
+
+     /* @media (max-width:900px){
+        .newebo2 p{
+            font-size: 14px !important;
+        }
+
+        .newebo2 h2{
+            font-size: 25px !important;
+        }
+
+        p{
+            font-size: 14px !important;
+        }
+    } */
+
+
+
+    @media (max-width:1024px)
+    {
+        .card-slider{
+            transform: translate(-36%, 100%);
+        }
+        h1{
+            font-size: 40px !important;
+        }
+        p{
+            font-size: 18px !important;
+        }
+
+        .struggle-card img{
+            width: 60px;
+            height: 60px;
+        }
+
+        .struggle-card p{
+            font-size: 18px !important;
+        }
+    }
+    
+
+    /* @media (max-width:1300px) {
+        .ebo2{
+            margin-top: 100px !important;
+            height: 400px;
+        }
+        .newebo2 p{
+            font-size: 18px !important;
+        }
+    } */
+
+   
+    
