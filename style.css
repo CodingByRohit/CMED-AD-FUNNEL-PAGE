@@ -2,6 +2,15 @@ body {
       font-family: 'inter', sans-serif;
     }
 
+        .onecard{
+            height: 100vh;
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+        }
+
     .container
     {
         width: 100% !important;
@@ -190,25 +199,11 @@ h2, h3, h4, h5, h6 {
     border: 1px solid #c06c3e;
     background-color: #c06c3e;
 }
-/* .ebo2{
-    min-height: 400px; 
-    background-color: #F7F8F9; 
-    display: flex; 
-    align-items: flex-end;
-    width: 100%;
-    height: 600px;
-    margin-top: 175px !important;
-} */
-
-    /* .newebo2{
-        margin-top: 130px;
-    } */
-
 
     /* EBO2 section start  */
 
      .ebo2{
-        margin-top: 326px;
+        margin-top: 413px;
     }
 
     .rightebo2{
@@ -235,7 +230,7 @@ h2, h3, h4, h5, h6 {
 
  @media (max-width: 1200px) and (min-width: 992px){
         .ebo2 {
-        margin-top: 300px;
+        margin-top: 60px;
     }
     .rightebo2 {
         margin-top: -61px;
@@ -249,6 +244,7 @@ h2, h3, h4, h5, h6 {
     .rightebo2 {
         margin-top: 20px;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -257,6 +253,9 @@ h2, h3, h4, h5, h6 {
     }
     .rightebo2 {
         margin-top: 20px;
+    }
+    .gapping{
+        margin-top: 600px !important;
     }
 }
     
@@ -270,7 +269,7 @@ h2, h3, h4, h5, h6 {
       color: #fff;
       position: relative;
       padding: 100px 0;
-      height: 100vh;
+      /* height: 100vh; */
     }
 
     .hero-overlay {
@@ -308,7 +307,7 @@ h2, h3, h4, h5, h6 {
        /* Section Styling */
     .struggling-section {
       text-align: center;
-      padding: 80px 0;
+      margin: 100px 0px;
       background-color: #ffffff;
     }
 
@@ -392,104 +391,8 @@ h2, h3, h4, h5, h6 {
         padding: 15px;
       }
     }
-    /* What is EBO2 */
-   /* .section-title span {
-    color: var(--primary-color);
-  }
-
-  
-
-  .newdesign {
-    position: relative;
-    background: #F8F9FA;
-    padding: 60px 0; 
-    margin-top: 150px;
-  }
-
-  .newdesign small {
-    font-weight: 500;
-    color: #555;
-  }
-
-  .newdesign p {
-    color: #333;
-    line-height: 1.6;
-  }
-
-  .override {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 500px;
-    transform: translateX(-36%);
-  } */
-
-  /* RESPONSIVE FIXES */
-  /* @media (max-width: 991px) {
-    .newdesign {
-      margin-top: 100px;
-      text-align: center;
-      padding-bottom: 0;
-    }
-
-    .override {
-      position: relative;
-      
-      margin-top: 30px;
-      width: 100%;
-      max-width: 100%;
-      transform: translate(10px, 10px);
-    }
-  }
-
-  @media (max-width: 576px) {
-    .newdesign {
-      margin-top: 60px;
-      padding: 40px 15px;
-    }
-
-    .newdesign h3 {
-      font-size: 1.6rem;
-    }
-
-    .newdesign p {
-      font-size: 0.95rem;
-    }
-  } */
-
-  /* discover  */
-
-  .info-card{
-    text-align: start;
-    border: 1px solid #1F263670;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .info-card h5{
-    color: #c55b26;
-  }
-
-  /* .cardsbtn1 {
-    margin-top: 77px !important;
-  } */
-
-  .cardsbtn2 {
-    margin-top: 110px !important;
    
-  }
 
-
-
-  .theborder
-  /* {
-    border: 1px solid #1F263670;
-    padding: 20px;
-    border-radius: 10px;
-
-  } */
-
-    /* benefits  */
 
 .newimg{
      position: relative;
@@ -641,13 +544,7 @@ h2, h3, h4, h5, h6 {
     font-size: 14px; /* Reduce text size for mobile */
   }
 
-  /* .ebo2{
-    margin-top: 0px !important;
-  }
-  .newebo2{
-    margin-top: 10px !important;
-  } */
-
+ 
 }
 
 
@@ -665,7 +562,7 @@ h2, h3, h4, h5, h6 {
     }
 
     .gapping{
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
     /* Left Content */
@@ -762,7 +659,7 @@ h2, h3, h4, h5, h6 {
       color: #ccc;
       padding: 30px 0;
       font-size: 14px;
-      margin-top: 150px;
+      margin-top: 100px;
     }
 
     footer a {
@@ -774,30 +671,111 @@ h2, h3, h4, h5, h6 {
       text-decoration: underline;
     }
 
-    @media (max-width:768px){
+  
+
+
+   
+
+     
+
+
+    @media (max-width:1024px)
+    {
+        .card-slider{
+            transform: translate(-36%, 100%);
+        }
+        h1{
+            font-size: 40px !important;
+        }
+        p{
+            font-size: 18px !important;
+        }
+
+        .struggle-card img{
+            width: 60px;
+            height: 60px;
+        }
+
+        .struggle-card p{
+            font-size: 18px !important;
+        }
+
+        .struggling-section{
+
+            margin-top: 60px;
+        }
+
+        .gapping{
+            margin-top: 60px;
+        }
+
+        .contact-section{
+            margin-top: 60px;
+        }
+
+        footer{
+            margin-top: 60px;
+        }
+    }
+    
+ @media (max-width:992px)
+    {
+        h1{
+            font-size: 40px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        h3{
+            font-size: 35px;
+        }
+
+        h5{
+            font-size: 20px;
+        }
+        .newdesign p{
+            font-size:20px !important;
+        }
+        li{
+            font-size: 16px !important;
+        }
+
+
+        /* .cardsbtn1{
+            margin-top: 50px !important;
+        } */
+
+        .carousel-control-prev{
+   transform: translate(519px, -15%);
+           }
+           .carousel-control-next{
+           transform: translate(-12px, -15%);
+           }
+
+           .contact-content img{
+            width: 50px;
+            height: 50px;
+           }
+
+           .contact-content h5{
+            font-size: 25px;
+           }
+
+.gapping{
+        margin-top:700px !important;
+    }
+    }
+
+
+      @media (max-width:768px){
         h1{
             font-size: 30px !important;
             text-align: center;
         }
 
-        /* .ebo2{
-            margin-top: 375px !important;
-            align-items: flex-start;
-            margin-top: 0px !important;
-        } */
-
-        /* .ebo2 h2{
-    text-align: center;
-  }
-
-  .newebo2 {
-    text-align: center;
-  }
-
-
-   .ebo2 p{
-    text-align: center;
-  } */
+       .gapping{
+        margin-top: 550px !important;
+       }
 
         .hero-content{
             padding-top: 50x !important;
@@ -850,102 +828,15 @@ footer{
 
     }
 
-
-
-    @media (max-width:992px)
-    {
-        h1{
-            font-size: 40px !important;
-        }
-        p{
-            font-size: 16px !important;
-        }
-        h3{
-            font-size: 35px;
-        }
-
-        h5{
-            font-size: 20px;
-        }
-        .newdesign p{
-            font-size:20px !important;
-        }
-        li{
-            font-size: 16px !important;
-        }
-
-
-        /* .cardsbtn1{
-            margin-top: 50px !important;
-        } */
-
-        .carousel-control-prev{
-   transform: translate(519px, -15%);
-           }
-           .carousel-control-next{
-           transform: translate(-12px, -15%);
-           }
-
-           .contact-content img{
-            width: 50px;
-            height: 50px;
-           }
-
-           .contact-content h5{
-            font-size: 25px;
-           }
-
-
-    }
-
-     /* @media (max-width:900px){
-        .newebo2 p{
-            font-size: 14px !important;
-        }
-
-        .newebo2 h2{
-            font-size: 25px !important;
-        }
-
-        p{
-            font-size: 14px !important;
-        }
-    } */
-
-
-
-    @media (max-width:1024px)
-    {
-        .card-slider{
-            transform: translate(-36%, 100%);
-        }
-        h1{
-            font-size: 40px !important;
-        }
-        p{
-            font-size: 18px !important;
-        }
-
-        .struggle-card img{
-            width: 60px;
-            height: 60px;
-        }
-
-        .struggle-card p{
-            font-size: 18px !important;
-        }
-    }
-    
-
-    /* @media (max-width:1300px) {
-        .ebo2{
-            margin-top: 100px !important;
-            height: 400px;
-        }
-        .newebo2 p{
-            font-size: 18px !important;
-        }
-    } */
-
    
-    
+    @media (max-width:576px) {
+        .gapping{
+            margin-top: 400px !important;
+        }
+    }
+
+    @media (max-width:426px) {
+        .gapping{
+            margin-top: 250px !important;
+        }
+    }
