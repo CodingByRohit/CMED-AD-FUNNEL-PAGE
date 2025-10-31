@@ -2,6 +2,15 @@ body {
       font-family: 'inter', sans-serif;
     }
 
+        .onecard{
+            height: 100vh;
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+        }
+
     .container
     {
         width: 100% !important;
@@ -48,6 +57,123 @@ h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
+    /* slider  */
+
+
+        /* --- SLIDER STYLE --- */
+
+    .position-absolute{
+        bottom: -128px;
+        right: 0px;
+        width: 850px;
+    }    
+
+    .benefit-slider {
+      background-color: #f8f9fb;
+      border-radius: 10px;
+      padding: 60px 80px;
+      max-width: 800px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .benefit-slider h4 {
+      font-weight: 700;
+    }
+
+    .benefit-slider span {
+      color: #f15a29;
+    }
+
+    .benefit-slider ul {
+      margin-top: 15px;
+    }
+
+    .benefit-slider li {
+      margin-bottom: 8px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .btn-outline {
+      border: 1px solid #f15a29;
+      color: #f15a29;
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    .btn-outline:hover {
+      background-color: #f15a29;
+      color: white;
+    }
+
+    /* --- Arrows --- */
+    .carousel-control-prev, .carousel-control-next {
+      background-color: #f15a29;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      top: auto;
+      bottom: 20px;
+      opacity: 1;
+    }
+
+    .carousel-control-prev {
+      left: calc(90% - 90px);
+      bottom: 12%;
+    }
+
+    .carousel-control-next {
+      right: 20px;
+      bottom: 12%;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-size: 60%;
+    }
+
+    @media (max-width: 1200px){
+        .mainslider{
+            margin-top: 100px;
+        }
+        .benefit-slider{
+            padding: 40px 40px !important;
+        }
+        .position-absolute{
+            width: 650px;
+        }
+    }
+
+    @media (max-width: 992px) and (min-width: 769px){
+    .mainslider{
+        margin-top: 700px;
+    }
+    }
+
+     @media (max-width: 768px) and (min-width: 577px){
+    .mainslider{
+        margin-top: 700px;
+    }
+    }
+
+      @media (max-width: 576px) and (min-width: 360px){
+    .mainslider{
+        margin-top: 600px;
+        display: none;
+    }
+    .mainslider1{
+        margin-top: 600px;
+        display: none;
+    }
+    }
+    
+    
+
+
+  /* slider end  */
+
+
 .headingform
 {
     font-size: 40px;
@@ -65,25 +191,11 @@ h2, h3, h4, h5, h6 {
     border: 1px solid #c06c3e;
     background-color: #c06c3e;
 }
-/* .ebo2{
-    min-height: 400px; 
-    background-color: #F7F8F9; 
-    display: flex; 
-    align-items: flex-end;
-    width: 100%;
-    height: 600px;
-    margin-top: 175px !important;
-} */
-
-    /* .newebo2{
-        margin-top: 130px;
-    } */
-
 
     /* EBO2 section start  */
 
      .ebo2{
-        margin-top: 326px;
+        margin-top: 413px;
     }
 
     .rightebo2{
@@ -110,7 +222,7 @@ h2, h3, h4, h5, h6 {
 
  @media (max-width: 1200px) and (min-width: 992px){
         .ebo2 {
-        margin-top: 300px;
+        margin-top: 60px;
     }
     .rightebo2 {
         margin-top: -61px;
@@ -119,11 +231,12 @@ h2, h3, h4, h5, h6 {
 
  @media (max-width: 992px) and (min-width: 768px){
         .ebo2 {
-        margin-top: 200px;
+        margin-top: 0px;
     }
     .rightebo2 {
         margin-top: 20px;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -132,6 +245,9 @@ h2, h3, h4, h5, h6 {
     }
     .rightebo2 {
         margin-top: 20px;
+    }
+    .gapping{
+        margin-top: 100px !important;
     }
 }
     
@@ -145,7 +261,7 @@ h2, h3, h4, h5, h6 {
       color: #fff;
       position: relative;
       padding: 100px 0;
-      height: 100vh;
+      /* height: 100vh; */
     }
 
     .hero-overlay {
@@ -183,7 +299,7 @@ h2, h3, h4, h5, h6 {
        /* Section Styling */
     .struggling-section {
       text-align: center;
-      padding: 80px 0;
+      margin: 100px 0px;
       background-color: #ffffff;
     }
 
@@ -195,6 +311,10 @@ h2, h3, h4, h5, h6 {
 
     .struggling-section h2 span {
       color: #c06c3e;
+    }
+
+    .card-title{
+        color: #f15a29;
     }
 
     /* Card Style */
@@ -267,107 +387,12 @@ h2, h3, h4, h5, h6 {
         padding: 15px;
       }
     }
-    /* What is EBO2 */
-   /* .section-title span {
-    color: var(--primary-color);
-  }
-
-  
-
-  .newdesign {
-    position: relative;
-    background: #F8F9FA;
-    padding: 60px 0; 
-    margin-top: 150px;
-  }
-
-  .newdesign small {
-    font-weight: 500;
-    color: #555;
-  }
-
-  .newdesign p {
-    color: #333;
-    line-height: 1.6;
-  }
-
-  .override {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 500px;
-    transform: translateX(-36%);
-  } */
-
-  /* RESPONSIVE FIXES */
-  /* @media (max-width: 991px) {
-    .newdesign {
-      margin-top: 100px;
-      text-align: center;
-      padding-bottom: 0;
-    }
-
-    .override {
-      position: relative;
-      
-      margin-top: 30px;
-      width: 100%;
-      max-width: 100%;
-      transform: translate(10px, 10px);
-    }
-  }
-
-  @media (max-width: 576px) {
-    .newdesign {
-      margin-top: 60px;
-      padding: 40px 15px;
-    }
-
-    .newdesign h3 {
-      font-size: 1.6rem;
-    }
-
-    .newdesign p {
-      font-size: 0.95rem;
-    }
-  } */
-
-  /* discover  */
-
-  .info-card{
-    text-align: start;
-    border: 1px solid #1F263670;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .info-card h5{
-    color: #c55b26;
-  }
-
-  /* .cardsbtn1 {
-    margin-top: 77px !important;
-  } */
-
-  .cardsbtn2 {
-    margin-top: 110px !important;
    
-  }
 
-
-
-  .theborder
-  /* {
-    border: 1px solid #1F263670;
-    padding: 20px;
-    border-radius: 10px;
-
-  } */
-
-    /* benefits  */
 
 .newimg{
      position: relative;
+     width: 80%;
 }
 
  .image-section {
@@ -384,15 +409,15 @@ h2, h3, h4, h5, h6 {
 }
 
 .card-slider {
-  position: absolute; /* Position absolute to overlap the image */
+  position: absolute; 
   width: 100%;
-  max-width: 680px; /* Maximum width for large screens */
+  max-width: 33%; 
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding: 20px;
-  transform: translate(-43%, 100%);
+  padding: 50px;
+  transform: translate(97%, -67%);
   margin-top: 10px;
 }
 
@@ -421,35 +446,10 @@ h2, h3, h4, h5, h6 {
 }
 
 .carousel-inner{
-    overflow: visible;
+    overflow: hidden;
 }
 
-/* Carousel Controls */
-.carousel-control-next {
-  width: 30px;
-  height: 30px;
-  background-color: #f15a29;
-  border-radius: 50%;
-  opacity: 0.9;
-  top: auto;
-  bottom: 10px;
-  transform: translate(-17px, 2px);
-}
 
-.carousel-control-prev{
-  width: 30px;
-  height: 30px;
-  background-color: #f15a29;
-  border-radius: 50%;
-  opacity: 0.9;
-  top: auto;
-  bottom: 10px;
-  transform: translate(578px, 10%);
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-size: 50%;
-}
 
 /* RESPONSIVE STYLES */
 @media (max-width: 992px) {
@@ -476,17 +476,7 @@ h2, h3, h4, h5, h6 {
    transform: translate(0%, -25%) !important;
   }
 
-  .carousel-control-prev {
-    width: 25px;
-    height: 25px; /* Smaller carousel controls */
-    transform: translate(440px, 10px) !important;
-  }
-
-
-  .carousel-control-next {
-    width: 25px;
-    height: 25px; /* Smaller carousel controls */
-  }
+  
 
   .btn-schedule {
     font-size: 12px;
@@ -515,13 +505,7 @@ h2, h3, h4, h5, h6 {
     font-size: 14px; /* Reduce text size for mobile */
   }
 
-  /* .ebo2{
-    margin-top: 0px !important;
-  }
-  .newebo2{
-    margin-top: 10px !important;
-  } */
-
+ 
 }
 
 
@@ -539,7 +523,7 @@ h2, h3, h4, h5, h6 {
     }
 
     .gapping{
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
     /* Left Content */
@@ -636,7 +620,7 @@ h2, h3, h4, h5, h6 {
       color: #ccc;
       padding: 30px 0;
       font-size: 14px;
-      margin-top: 150px;
+      margin-top: 100px;
     }
 
     footer a {
@@ -648,30 +632,101 @@ h2, h3, h4, h5, h6 {
       text-decoration: underline;
     }
 
-    @media (max-width:768px){
+  
+
+
+   
+
+     
+
+
+    @media (max-width:1024px)
+    {
+        .card-slider{
+            transform: translate(-36%, 100%);
+        }
+        h1{
+            font-size: 40px !important;
+        }
+        p{
+            font-size: 18px !important;
+        }
+
+        .struggle-card img{
+            width: 60px;
+            height: 60px;
+        }
+
+        .struggle-card p{
+            font-size: 18px !important;
+        }
+
+        .struggling-section{
+
+            margin-top: 60px;
+        }
+
+        .gapping{
+            margin-top: 60px;
+        }
+
+        .contact-section{
+            margin-top: 60px;
+        }
+
+        footer{
+            margin-top: 60px;
+        }
+    }
+    
+ @media (max-width:992px)
+    {
+        h1{
+            font-size: 40px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        h3{
+            font-size: 35px;
+        }
+
+        h5{
+            font-size: 20px;
+        }
+        .newdesign p{
+            font-size:20px !important;
+        }
+        li{
+            font-size: 16px !important;
+        }
+
+
+
+           .contact-content img{
+            width: 50px;
+            height: 50px;
+           }
+
+           .contact-content h5{
+            font-size: 25px;
+           }
+
+.gapping{
+        margin-top:100px !important;
+    }
+    }
+
+
+      @media (max-width:768px){
         h1{
             font-size: 30px !important;
             text-align: center;
         }
 
-        /* .ebo2{
-            margin-top: 375px !important;
-            align-items: flex-start;
-            margin-top: 0px !important;
-        } */
-
-        /* .ebo2 h2{
-    text-align: center;
-  }
-
-  .newebo2 {
-    text-align: center;
-  }
-
-
-   .ebo2 p{
-    text-align: center;
-  } */
+       .gapping{
+        margin-top: 100px !important;
+       }
 
         .hero-content{
             padding-top: 50x !important;
@@ -714,9 +769,7 @@ h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.carousel-control-prev{
-  transform: translate(300px, 10%);
-}
+
 
 footer{
     margin-top:20px;
@@ -724,102 +777,15 @@ footer{
 
     }
 
-
-
-    @media (max-width:992px)
-    {
-        h1{
-            font-size: 40px !important;
-        }
-        p{
-            font-size: 16px !important;
-        }
-        h3{
-            font-size: 35px;
-        }
-
-        h5{
-            font-size: 20px;
-        }
-        .newdesign p{
-            font-size:20px !important;
-        }
-        li{
-            font-size: 16px !important;
-        }
-
-
-        /* .cardsbtn1{
-            margin-top: 50px !important;
-        } */
-
-        .carousel-control-prev{
-   transform: translate(519px, -15%);
-           }
-           .carousel-control-next{
-           transform: translate(-12px, -15%);
-           }
-
-           .contact-content img{
-            width: 50px;
-            height: 50px;
-           }
-
-           .contact-content h5{
-            font-size: 25px;
-           }
-
-
-    }
-
-     /* @media (max-width:900px){
-        .newebo2 p{
-            font-size: 14px !important;
-        }
-
-        .newebo2 h2{
-            font-size: 25px !important;
-        }
-
-        p{
-            font-size: 14px !important;
-        }
-    } */
-
-
-
-    @media (max-width:1024px)
-    {
-        .card-slider{
-            transform: translate(-36%, 100%);
-        }
-        h1{
-            font-size: 40px !important;
-        }
-        p{
-            font-size: 18px !important;
-        }
-
-        .struggle-card img{
-            width: 60px;
-            height: 60px;
-        }
-
-        .struggle-card p{
-            font-size: 18px !important;
-        }
-    }
-    
-
-    /* @media (max-width:1300px) {
-        .ebo2{
-            margin-top: 100px !important;
-            height: 400px;
-        }
-        .newebo2 p{
-            font-size: 18px !important;
-        }
-    } */
-
    
-    
+    @media (max-width:576px) {
+        .gapping{
+            margin-top: 400px !important;
+        }
+    }
+
+    @media (max-width:426px) {
+        .gapping{
+            margin-top: 250px !important;
+        }
+    }
