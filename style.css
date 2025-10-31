@@ -3,20 +3,23 @@ body {
     }
 
         .onecard{
-            height: 100vh;
-    display: flex
-;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: end;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
         }
 
     .container
     {
         width: 100% !important;
         max-width: 1760px !important;
-        padding: 0 40px !important;
+        padding: 0 20px !important;
     }
+
+    .belowfooter p{
+        margin-bottom: 0rem !important;
+        }
 
     /* Colors */
     :root {
@@ -216,7 +219,7 @@ h2, h3, h4, h5, h6 {
         margin-top: 300px;
     }
     .rightebo2 {
-        margin-top: -151px;
+        margin-top: -229px;
     }
 }
 
@@ -249,6 +252,12 @@ h2, h3, h4, h5, h6 {
     .gapping{
         margin-top: 100px !important;
     }
+
+    .belowfootericons{
+      text-align: center !important;
+      margin-top: 8px;
+    }
+
 }
     
 
@@ -260,7 +269,7 @@ h2, h3, h4, h5, h6 {
       background: url('image/banner-bg.png') center/cover no-repeat;
       color: #fff;
       position: relative;
-      padding: 100px 0;
+      padding: 200px 0 100px 0;
       /* height: 100vh; */
     }
 
@@ -466,6 +475,13 @@ h2, h3, h4, h5, h6 {
     font-size: 16px !important;
   }
 
+    .belowfooter p{
+      text-align: center;
+    }
+
+    .belowfootericons {
+      text-align: center !important;
+    }
 
 }
 
@@ -637,7 +653,19 @@ h2, h3, h4, h5, h6 {
 
    
 
-     
+     @media (max-width:1440px) {
+        footer p{
+          font-size: 20px !important;
+        }
+
+        .belowfooter p{
+          font-size: 20px !important;
+        }
+
+        .belowfootericons{
+          text-align: end !important;
+        }
+     }
 
 
     @media (max-width:1024px)
@@ -667,7 +695,7 @@ h2, h3, h4, h5, h6 {
         }
 
         .gapping{
-            margin-top: 60px;
+            margin-top: 100px;
         }
 
         .contact-section{
@@ -757,7 +785,11 @@ h2, h3, h4, h5, h6 {
         .belowfooter{
             text-align: center !important;
             font-size: 14px !important;
+            
         }
+
+        
+
         .hero-content h1{
             font-size: 45px;
         }
@@ -787,5 +819,9 @@ footer{
     @media (max-width:426px) {
         .gapping{
             margin-top: 250px !important;
+        }
+
+        struggle-card p {
+          text-align: start !important;
         }
     }
