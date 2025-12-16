@@ -207,7 +207,7 @@ h2, h3, h4, h5, h6 {
 
     @media (max-width: 1600px) and (min-width: 1400px){
         .ebo2 {
-        margin-top: 300px;
+        margin-top: 380px;
     }
     .rightebo2 {
         margin-top: -354px;
@@ -242,6 +242,14 @@ h2, h3, h4, h5, h6 {
     
 }
 
+@media (max-width: 767px) {
+  .contact-section {
+    min-height: 900px;
+  }
+  .hero {
+    min-height: 950px!important;
+  }
+}
 @media (max-width: 768px) {
     .ebo2 {
         margin-top: 100px;
@@ -269,7 +277,8 @@ h2, h3, h4, h5, h6 {
       background: url('image/banner-bg.png') center/cover no-repeat;
       color: #fff;
       position: relative;
-      padding: 200px 0 100px 0;
+      min-height: 900px;
+      /* padding: 200px 0 100px 0; */
       /* height: 100vh; */
     }
 
@@ -530,6 +539,7 @@ h2, h3, h4, h5, h6 {
 
    /* Section Background */
     .contact-section {
+      min-height: 700px;
       position: relative;
       width: 100%;
       background-color: #f7f8f9;
@@ -539,7 +549,7 @@ h2, h3, h4, h5, h6 {
     }
 
     .gapping{
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     /* Left Content */
@@ -670,6 +680,10 @@ h2, h3, h4, h5, h6 {
 
     @media (max-width:1024px)
     {
+
+      .contact-content {
+      padding-left: 15px;
+    }
         .card-slider{
             transform: translate(-36%, 100%);
         }
