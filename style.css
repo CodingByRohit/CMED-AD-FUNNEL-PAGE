@@ -242,10 +242,23 @@ h2, h3, h4, h5, h6 {
     
 }
 
+.contact-section iframe{
+  min-height: 700px;
+}
+
+@media (max-width: 1124px){
+.contact-section {
+      min-height: 700px!important;
+}
+.gapping .card-title {
+    font-size: 16px !important;}
+}
+
 @media (max-width: 767px) {
   .contact-section {
-    min-height: 900px;
+    min-height: 900px!important;
   }
+  
   .hero {
     min-height: 950px!important;
   }
@@ -539,7 +552,7 @@ h2, h3, h4, h5, h6 {
 
    /* Section Background */
     .contact-section {
-      min-height: 700px;
+      min-height: 500px;
       position: relative;
       width: 100%;
       background-color: #f7f8f9;
@@ -700,7 +713,7 @@ h2, h3, h4, h5, h6 {
         }
 
         .struggle-card p{
-            font-size: 18px !important;
+            font-size: 14px !important;
         }
 
         .struggling-section{
@@ -775,7 +788,7 @@ h2, h3, h4, h5, h6 {
         }
         p{
             font-size: 14px !important;
-            text-align: center;
+            text-align: left;
         }
 
         h2, h3, h4, h5, h6 {
